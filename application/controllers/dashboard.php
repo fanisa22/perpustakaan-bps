@@ -4,6 +4,7 @@ class Dashboard extends CI_Controller{
 
     public function index()
     {
-        $this->load->view('v_dashboard');
+        $isi['content'] = 'v_content';
+        $this->load->view('v_dashboard', $isi);
     }
 }
