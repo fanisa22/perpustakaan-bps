@@ -30,18 +30,20 @@
               <div class="brand-logo text-center">
                 <img src="<?= base_url()?>assets/gambar/logo.png" alt="logo">
               </div>
-              <center><h4>LOGIN</h4></center>
-              <center><h6 class="font-weight-light">BPS Kota Malang</h6></center>
-              <form class="pt-3">
+
+              <?= $this->session->flashdata('info');?>
+
+                <center><h4>LOGIN</h4></center>
+                <center><h6 class="font-weight-light">BPS Kota Malang</h6><center>
+                <form method="post" action="<?= base_url()?>c_login" class="admin"> 
                 <div class="form-group">
-                  <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Username">
+                  <input type="text" name="username" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Username">
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
+                  <input type="password" name="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
                 </div>
-                <div class="mt-3">
-                  <a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" href="<?= base_url()?>assets/index.html">SIGN IN</a>
-                </div>
+                
+                <button type="submit" class="btn btn-primary btn-lg font-weight-medium auth-form-btn btn-block">SIGN IN</button>
                 
                 <div class="text-center mt-4 font-weight-light">
                   Don't have an account? <a href="register.html" class="text-primary">Create</a>
