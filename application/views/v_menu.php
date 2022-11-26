@@ -18,7 +18,7 @@
             <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="<?= base_url()?>pengarang">Pengarang</a></li>
               <li class="nav-item"> <a class="nav-link" href="<?= base_url()?>#">Penerbit</a></li>
-              <li class="nav-item"> <a class="nav-link" href="<?= base_url()?>#">Buku</a></li>
+              <li class="nav-item"> <a class="nav-link" href="<?= base_url()?>buku">Buku</a></li>
             </ul>
           </div>
         </li>
