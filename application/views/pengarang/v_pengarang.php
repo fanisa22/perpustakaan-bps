@@ -9,7 +9,7 @@
                   <div class="row">
                     <br>
     <div class="col-md-6">
-        <a href="<?= base_url() ?>pengarang/tambah_pengarang" class="btn btn-success"><i class="fa fa-plus-circle"></i>  Tambah Pengarang</a>
+        <a href="<?= base_url() ?>pengarang/tambah_pengarang" class="btn btn-success"><i></i>  Tambah Pengarang</a>
     </div>
 
                   <div class="table-responsive pt-3">

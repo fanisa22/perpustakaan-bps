@@ -21,7 +21,7 @@
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="<?= base_url()?>assets/gambar/logo.png" class="mr-2" alt="logo"/></a>
+      <h5><a class="navbar-brand brand-logo mr-5" href="index.html"><img src="<?= base_url()?>assets/gambar/logo.png" class="mr-2" alt="logo"/>BPS Kota Malang</a></h5>
         <a class="navbar-brand brand-logo-mini" href="index.html"><img src="<?= base_url()?>assets/gambar/logo.png" alt="logo"/></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
@@ -115,7 +115,7 @@
         <!-- partial:partials/_footer.html -->
         <footer class="footer">
           <div class="d-sm-flex justify-content-center ">
-            <center><span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright ©BPS Kota Malang 2022</a> All rights reserved.</span></center>
+            <center><span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © Badan Pusat Statistika Kota Malang 2022</a> All rights reserved.</span></center>
             
           </div>
           
