@@ -24,7 +24,7 @@
         </li>
         
         <li class="nav-item">
-          <a class="nav-link" href="pages/documentation/documentation.html">
+          <a class="nav-link" href="<?= base_url()?>admin">
             <i class="icon-paper menu-icon"></i>
             <span class="menu-title">Admin Perpustakaan</span>
           </a>
