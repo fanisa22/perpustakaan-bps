@@ -16,10 +16,29 @@
                     <table class="table table-bordered" id="dataTable" width="100%">
                       <thead>
                         <tr>
+                          <th> No </th>
                           <th> Id Penerbit</th>
                           <th> Nama Penerbit</th>
                           <th> Aksi </th>
-                            
+                        </tr>
+                      </thead>
+
+                            <tbody>
+                                <?php
+                                    $no = 1;
+                                foreach($data as $row) {?>
+                                    <tr>
+                                        <td><?= $no++; ?></td>
+                                        <td><?= $row->id_penerbit;?></td>
+                                        <td><?= $row->nama_penerbit;?></td>
+                                        <td>
+                                            <a href="<?= base_url()?>penerbit/edit/<?= $row->id_penerbit;?>" class="btn btn-success btn-sm"> Edit </a>
+                                            <a href="<?= base_url()?>penerbit/delete/<?= $row->id_penerbit;?>" class="btn btn-danger btn-sm"onclick="return confirm('Anda Yakin Ingin Menghapus Data?')"> Delete </a>
+                                        </td>
+                                    </tr>
+                                <?php }
+                                ?>
+                            </tbody>
                     </table>
                   </div>
                 </div>
