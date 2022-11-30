@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 30 Nov 2022 pada 07.51
+-- Waktu pembuatan: 30 Nov 2022 pada 08.08
 -- Versi server: 10.4.14-MariaDB
 -- Versi PHP: 7.4.10
 
@@ -71,7 +71,8 @@ CREATE TABLE `pengarang` (
 --
 
 INSERT INTO `pengarang` (`id_pengarang`, `nama_pengarang`) VALUES
-(2, 'dfdsf');
+(2, 'dfdsf'),
+(3, 'Erlinda');
 
 --
 -- Indexes for dumped tables
@@ -109,7 +110,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT untuk tabel `pengarang`
 --
 ALTER TABLE `pengarang`
-  MODIFY `id_pengarang` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_pengarang` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

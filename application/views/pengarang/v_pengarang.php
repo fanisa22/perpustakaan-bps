@@ -43,8 +43,8 @@
                                 <td><?= $row->nama_pengarang;?></td>
                                 
                                 <td>
-                                            <a href="<?= base_url()?>konsumen/edit/<?= $row->id_pengarang;?>" class="btn btn-success btn-sm"> Edit </a>
-                                            <a href="<?= base_url()?>konsumen/hapus/<?= $row->id_pengarang;?>" class="btn btn-danger btn-sm"onclick="return confirm('Anda Yakin Ingin Menghapus?')"> Delete </a>
+                                            <a href="<?= base_url()?>pengarang/edit/<?= $row->id_pengarang;?>" class="btn btn-success btn-sm"> Edit </a>
+                                            <a href="<?= base_url()?>pengarang/hapus/<?= $row->id_pengarang;?>" class="btn btn-danger btn-sm"onclick="return confirm('Anda Yakin Ingin Menghapus?')"> Delete </a>
                                         </td>
                                 
                             </tr>
