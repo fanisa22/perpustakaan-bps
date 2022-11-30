@@ -29,7 +29,6 @@
             <span class="menu-title">Admin Perpustakaan</span>
           </a>
         </li>
-    
 
       <li class="nav-item">
           <a class="nav-link" href="<?= base_url()?>katalog">

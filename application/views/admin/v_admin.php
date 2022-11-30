@@ -17,9 +17,12 @@
                     <thead>
                             <tr>
                                     <th>Id</th>
-                                    <th>Nama</th>
+                                    <th>Name</th>
                                     <th>Username</th>
                                     <th>Password</th>
+                                    <th>Id Role</th>
+                                    <th>Is Active</th>
+                                    <th>Date Created</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
@@ -29,7 +32,7 @@
                                 foreach($data as $row) {?>
                                     <tr>
                                         <td><?= $no++; ?></td>
-                                        <td><?= $row->id_admin;?></td>
+                                        <td><?= $row->id;?></td>
                                         <td><?= $row->nama;?></td>
                                         <td><?= $row->username;?></td>
                                         <td><?= $row->password;?></td>
