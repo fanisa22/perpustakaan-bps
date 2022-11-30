@@ -15,4 +15,6 @@ class C_login extends CI_Controller {
         $password = $this->input->post('password');
         $this->m_login->proses_login($username, $password);
     }
+
+    
 }

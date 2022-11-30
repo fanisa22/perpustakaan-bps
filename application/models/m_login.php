@@ -7,11 +7,11 @@ class M_login extends CI_Model {
     {
         $this->db->where('username', $username);
         $this->db->where('password', $password);
-        $query = $this->db->get('admin');
+        $query = $this->db->get('login');
         if ($query->num_rows() > 0) {
             foreach ($query->result() as $row) {
                 $sess = array(
-                    'id_admin' => $row->id_admin ,
+                    'id' => $row->id ,
                     'username' => $row->username ,
                     'password' => $row->password
                 );
