@@ -17,14 +17,14 @@
           <div class="collapse" id="ui-basic">
             <ul class="nav flex-column sub-menu">
               <li class="nav-item"> <a class="nav-link" href="<?= base_url()?>pengarang">Pengarang</a></li>
-              <li class="nav-item"> <a class="nav-link" href="<?= base_url()?>#">Penerbit</a></li>
+              <li class="nav-item"> <a class="nav-link" href="<?= base_url()?>penerbit">Penerbit</a></li>
               <li class="nav-item"> <a class="nav-link" href="<?= base_url()?>buku">Buku</a></li>
             </ul>
           </div>
         </li>
         
         <li class="nav-item">
-          <a class="nav-link" href="pages/documentation/documentation.html">
+          <a class="nav-link" href="<?= base_url()?>admin">
             <i class="icon-paper menu-icon"></i>
             <span class="menu-title">Admin Perpustakaan</span>
           </a>
