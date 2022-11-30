@@ -37,5 +37,13 @@
             <span class="menu-title">Katalog Buku</span>
           </a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="pages/documentation/documentation.html">
+            <i class="icon-paper menu-icon"></i>
+            <span class="menu-title">Galeri</span>
+          </a>
+        </li>
+
       </ul>
     </nav>

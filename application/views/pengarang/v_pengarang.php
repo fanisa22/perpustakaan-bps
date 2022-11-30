@@ -1,4 +1,19 @@
 <div class="container-fluid">
+
+<?php
+    if(!empty($this->session->flashdata('info'))){ ?>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Selamat!</strong> <?= $this->session->flashdata('info')?>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+    <?php }
+
+?>
+
+<div class="container-fluid">
 <div class="col-lg-16 grid-margin stretch-card"  style="margin-left:auto;margin-right:auto" >
               <div class="card">
                 <div class="card-body">
@@ -19,7 +34,22 @@
                           <th> Id Pengarang</th>
                           <th> Nama Pengarang</th>
                           <th> Aksi </th>
-                            
+                      </thead>
+                      <tbody>
+                      <?php
+                            foreach ($data as $row) {?>
+                            <tr>
+                                <td><?= $row->id_pengarang;?></td>
+                                <td><?= $row->nama_pengarang;?></td>
+                                
+                                <td>
+                                    <a href="<?= base_url()?>pengarang/edit/<?= $row->id_pengarang;?>" class="btn btn-warning btn-xs"><i class="fa fa-edit (alias)"></i> Edit</a>
+                                    <a href="<?= base_url()?>pengarang/hapus/<?= $row->id_pengarang;?>" class="btn btn-danger btn-xs" onclick="return confirm('Yakin akan menghapus data?');"><i class="fa fa-trash-o"></i> Hapus</a>
+                                </td>
+                            </tr>
+                            <?php }
+                            ?>
+                    </tbody>
                     </table>
                   </div>
                 </div>
