@@ -19,13 +19,14 @@
   <!-- End plugin css for this page -->
   <!-- inject:css -->
   <link rel="stylesheet" href="<?= base_url()?>assets/css/vertical-layout-light/style.css">
+  <link rel="shortcut icon" href="<?= base_url()?>assets/gambar/logo.png" />
 </head>
 <body>
   <div class="container-scroller">
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="<?= base_url()?>assets/gambar/logo.png" class="mr-2" alt="logo"/></a>
+        <a class="navbar-brand brand-logo mr-8" href="index.html"><img src="<?= base_url()?>assets/gambar/logo.png" class="mr-2" alt="logo"/></a>
         <a class="navbar-brand brand-logo-mini" href="index.html"><img src="<?= base_url()?>assets/gambar/logo.png" alt="logo"/></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">

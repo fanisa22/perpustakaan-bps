@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.3
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 26, 2022 at 12:32 AM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.4.11
+-- Waktu pembuatan: 30 Nov 2022 pada 07.51
+-- Versi server: 10.4.14-MariaDB
+-- Versi PHP: 7.4.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin`
+-- Struktur dari tabel `admin`
 --
 
 CREATE TABLE `admin` (
@@ -34,31 +34,82 @@ CREATE TABLE `admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `admin`
+-- Dumping data untuk tabel `admin`
 --
 
 INSERT INTO `admin` (`id_admin`, `username`, `password`) VALUES
 (1, 'admin', 'admin123');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `buku`
+--
+
+CREATE TABLE `buku` (
+  `id_buku` varchar(25) NOT NULL,
+  `judul_buku` varchar(30) NOT NULL,
+  `id_penerbit` int(15) NOT NULL,
+  `id_pengarang` int(15) NOT NULL,
+  `isbn` varchar(20) NOT NULL,
+  `tahun` int(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `pengarang`
+--
+
+CREATE TABLE `pengarang` (
+  `id_pengarang` int(15) NOT NULL,
+  `nama_pengarang` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `pengarang`
+--
+
+INSERT INTO `pengarang` (`id_pengarang`, `nama_pengarang`) VALUES
+(2, 'dfdsf');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `admin`
+-- Indeks untuk tabel `admin`
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`id_admin`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- Indeks untuk tabel `buku`
+--
+ALTER TABLE `buku`
+  ADD PRIMARY KEY (`id_buku`);
+
+--
+-- Indeks untuk tabel `pengarang`
+--
+ALTER TABLE `pengarang`
+  ADD PRIMARY KEY (`id_pengarang`);
+
+--
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `admin`
+-- AUTO_INCREMENT untuk tabel `admin`
 --
 ALTER TABLE `admin`
   MODIFY `id_admin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT untuk tabel `pengarang`
+--
+ALTER TABLE `pengarang`
+  MODIFY `id_pengarang` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

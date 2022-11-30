@@ -10,7 +10,7 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-            <i class="icon-layout menu-icon"></i>
+            <i class="icon-paper menu-icon"></i>
             <span class="menu-title">Data Buku</span>
             <i class="menu-arrow"></i>
           </a>
@@ -25,23 +25,30 @@
         
         <li class="nav-item">
           <a class="nav-link" href="<?= base_url()?>admin">
-            <i class="icon-paper menu-icon"></i>
+            <i class="icon-head menu-icon"></i>
             <span class="menu-title">Admin Perpustakaan</span>
           </a>
         </li>
     
 
-    <li class="nav-item">
-          <a class="nav-link" href="pages/documentation/documentation.html">
-            <i class="icon-paper menu-icon"></i>
+      <li class="nav-item">
+          <a class="nav-link" href="<?= base_url()?>katalog">
+            <i class="icon-layout menu-icon"></i>
             <span class="menu-title">Katalog Buku</span>
           </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="pages/documentation/documentation.html">
-            <i class="icon-paper menu-icon"></i>
+          <a class="nav-link" href="<?= base_url()?>galeri">
+            <i class="icon-contract menu-icon"></i>
             <span class="menu-title">Galeri</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="feedback">
+            <i class="icon-columns menu-icon"></i>
+            <span class="menu-title">Feedback</span>
           </a>
         </li>
 
