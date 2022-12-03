@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.0.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 30 Nov 2022 pada 08.18
--- Versi server: 10.4.14-MariaDB
--- Versi PHP: 7.4.10
+-- Generation Time: Dec 03, 2022 at 08:39 AM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.4.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,26 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `admin`
---
-
-CREATE TABLE `admin` (
-  `id_admin` int(11) NOT NULL,
-  `username` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data untuk tabel `admin`
---
-
-INSERT INTO `admin` (`id_admin`, `username`, `password`) VALUES
-(1, 'admin', 'admin123');
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `buku`
+-- Table structure for table `buku`
 --
 
 CREATE TABLE `buku` (
@@ -58,7 +39,68 @@ CREATE TABLE `buku` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `pengarang`
+-- Table structure for table `login`
+--
+
+CREATE TABLE `login` (
+  `id` int(11) NOT NULL,
+  `nama` varchar(50) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `role_id` int(11) NOT NULL,
+  `is_active` int(1) NOT NULL,
+  `date_created` int(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `login`
+--
+
+INSERT INTO `login` (`id`, `nama`, `username`, `password`, `role_id`, `is_active`, `date_created`) VALUES
+(1, '', 'admin', 'admin123', 0, 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `login_role`
+--
+
+CREATE TABLE `login_role` (
+  `id` int(11) NOT NULL,
+  `role` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `login_role`
+--
+
+INSERT INTO `login_role` (`id`, `role`) VALUES
+(1, 'Superadmin'),
+(2, 'Admin');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `penerbit`
+--
+
+CREATE TABLE `penerbit` (
+  `id_penerbit` varchar(50) NOT NULL,
+  `nama_penerbit` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `penerbit`
+--
+
+INSERT INTO `penerbit` (`id_penerbit`, `nama_penerbit`) VALUES
+('P001', 'Gramedia Pustaka Utama'),
+('P002', 'Grasindo');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pengarang`
 --
 
 CREATE TABLE `pengarang` (
@@ -67,7 +109,7 @@ CREATE TABLE `pengarang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `pengarang`
+-- Dumping data for table `pengarang`
 --
 
 INSERT INTO `pengarang` (`id_pengarang`, `nama_pengarang`) VALUES
@@ -79,35 +121,53 @@ INSERT INTO `pengarang` (`id_pengarang`, `nama_pengarang`) VALUES
 --
 
 --
--- Indeks untuk tabel `admin`
---
-ALTER TABLE `admin`
-  ADD PRIMARY KEY (`id_admin`);
-
---
--- Indeks untuk tabel `buku`
+-- Indexes for table `buku`
 --
 ALTER TABLE `buku`
   ADD PRIMARY KEY (`id_buku`);
 
 --
--- Indeks untuk tabel `pengarang`
+-- Indexes for table `login`
+--
+ALTER TABLE `login`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `login_role`
+--
+ALTER TABLE `login_role`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `penerbit`
+--
+ALTER TABLE `penerbit`
+  ADD PRIMARY KEY (`id_penerbit`);
+
+--
+-- Indexes for table `pengarang`
 --
 ALTER TABLE `pengarang`
   ADD PRIMARY KEY (`id_pengarang`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `admin`
+-- AUTO_INCREMENT for table `login`
 --
-ALTER TABLE `admin`
-  MODIFY `id_admin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+ALTER TABLE `login`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT untuk tabel `pengarang`
+-- AUTO_INCREMENT for table `login_role`
+--
+ALTER TABLE `login_role`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `pengarang`
 --
 ALTER TABLE `pengarang`
   MODIFY `id_pengarang` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
