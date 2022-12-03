@@ -160,7 +160,7 @@
               <div class="member-info">
                 <h4>Walter White</h4>
                 <!-- <span>Chief Executive Officer</span> -->
-                <a href="register.html" class="text-primary"><span>Selengkapnya</span></a>
+                <a href="<?= base_url()?>katalog" class="text-primary"><span>Selengkapnya</span></a>
               </div>
             </div>
           </div>
@@ -205,6 +205,10 @@
     <!-- ======= Counts Section ======= -->
      <section id="counts" class="counts">
       <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h4>Koleksi Perpustakaan</h4>
+        </div>
 
         <div class="row" data-aos="fade-up">
 
