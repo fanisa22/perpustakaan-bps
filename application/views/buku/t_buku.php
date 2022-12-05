@@ -34,7 +34,7 @@
 
             <div class="form-group">
                 <label for="exampleInputName1">Penerbit</label>
-                    <select name="id_pengarang" class="form-control select2" id="exampleInputName1" required>
+                    <select name="id_penerbit" class="form-control select2" id="exampleInputName1" required>
 
                     <option value=""> - Pilih Penerbit - </option>
                     <?php

@@ -40,14 +40,16 @@ class Pengarang Extends CI_Controller{
     public function update()
     {
         $id_pengarang = $this->input->post('id_pengarang');
+
         $data = array(
-            'id_pengarang'    => $this-> input->post('id_pengarang'),
-            'nama_pengarang'  => $this-> input->post('nama_pengarang')
+            'id_pengarang' => $this->input->post('id_pengarang'),
+            'nama_pengarang' => $this->input->post('nama_pengarang')
+
         );
         $query = $this->m_pengarang->update($id_pengarang, $data);
         if($query = true){
-            $this->session->set_flashdata('info', 'Data Pengarang Berhasil Diupdate!');
-            redirect('pengarang','refresh');
+            $this->session->set_flashdata('info', 'Data Pengarang Berhasil Diupdate');
+            redirect('pengarang');
         }
     }
     public function hapus($id)

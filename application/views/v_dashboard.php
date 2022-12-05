@@ -56,11 +56,7 @@
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
               
               <a class="dropdown-item" href="<?= base_url()?>login">
-<<<<<<< Updated upstream
-                <i class="ti-power-off text-primary"></i>
-=======
                 <i class="ti-power-off text-primary" ></i>
->>>>>>> Stashed changes
                 Logout
               </a>
             </div>

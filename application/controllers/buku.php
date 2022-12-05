@@ -20,6 +20,7 @@ class Buku Extends CI_Controller{
         $isi['content'] = 'buku/t_buku';
         $isi['id_buku'] = $this->m_buku->id_buku();
         $isi['pengarang'] = $this->db->get('pengarang')->result();
+        $isi['penerbit'] = $this->db->get('penerbit')->result();
         $this->load->view('v_dashboard', $isi);
     }
 

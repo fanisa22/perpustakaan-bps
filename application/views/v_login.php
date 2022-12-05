@@ -48,12 +48,7 @@
                 </div>
                 
                 <button type="submit" class="btn btn-primary btn-lg font-weight-medium auth-form-btn btn-block">SIGN IN</button>
-                
-                <div class="text-center mt-4 font-weight-light">
-                <a href="register.html" class="text-primary">Forgot Password</a>
-                <div class="text-center mt-4 font-weight-light">
-                  <a href="<?= base_url()?>registrasi" class="text-primary">Don't have an account? Create</a>
-                </div>
+                <a class="btn btn-info btn-lg font-weight-medium auth-form-btn btn-block" href="<?=base_url() ?>home">BACK TO HOME</a>
               </form>
             </div>
           </div>
