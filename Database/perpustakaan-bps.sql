@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.3
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 03, 2022 at 08:39 AM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.4.11
+-- Waktu pembuatan: 05 Des 2022 pada 02.11
+-- Versi server: 10.4.14-MariaDB
+-- Versi PHP: 7.4.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `buku`
+-- Struktur dari tabel `buku`
 --
 
 CREATE TABLE `buku` (
@@ -39,7 +39,27 @@ CREATE TABLE `buku` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `login`
+-- Struktur dari tabel `galeri`
+--
+
+CREATE TABLE `galeri` (
+  `id_galeri` int(20) NOT NULL,
+  `nama` varchar(40) NOT NULL,
+  `foto` varchar(40) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `galeri`
+--
+
+INSERT INTO `galeri` (`id_galeri`, `nama`, `foto`) VALUES
+(1, 'buku', '6329002.jpg'),
+(3, 'Erlinda Kristanti', 'unicorn_1.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `login`
 --
 
 CREATE TABLE `login` (
@@ -53,7 +73,7 @@ CREATE TABLE `login` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `login`
+-- Dumping data untuk tabel `login`
 --
 
 INSERT INTO `login` (`id`, `nama`, `username`, `password`, `role_id`, `is_active`, `date_created`) VALUES
@@ -62,7 +82,7 @@ INSERT INTO `login` (`id`, `nama`, `username`, `password`, `role_id`, `is_active
 -- --------------------------------------------------------
 
 --
--- Table structure for table `login_role`
+-- Struktur dari tabel `login_role`
 --
 
 CREATE TABLE `login_role` (
@@ -71,7 +91,7 @@ CREATE TABLE `login_role` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `login_role`
+-- Dumping data untuk tabel `login_role`
 --
 
 INSERT INTO `login_role` (`id`, `role`) VALUES
@@ -81,7 +101,7 @@ INSERT INTO `login_role` (`id`, `role`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `penerbit`
+-- Struktur dari tabel `penerbit`
 --
 
 CREATE TABLE `penerbit` (
@@ -90,17 +110,17 @@ CREATE TABLE `penerbit` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `penerbit`
+-- Dumping data untuk tabel `penerbit`
 --
 
 INSERT INTO `penerbit` (`id_penerbit`, `nama_penerbit`) VALUES
-('P001', 'Gramedia Pustaka Utama'),
+('P001', 'Gramedia Pustaka Utamaa'),
 ('P002', 'Grasindo');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pengarang`
+-- Struktur dari tabel `pengarang`
 --
 
 CREATE TABLE `pengarang` (
@@ -109,68 +129,81 @@ CREATE TABLE `pengarang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `pengarang`
+-- Dumping data untuk tabel `pengarang`
 --
 
 INSERT INTO `pengarang` (`id_pengarang`, `nama_pengarang`) VALUES
 (2, 'dfdsf'),
-(3, 'Erlinda');
+(3, 'Erlinda'),
+(4, 'Erlinda');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `buku`
+-- Indeks untuk tabel `buku`
 --
 ALTER TABLE `buku`
   ADD PRIMARY KEY (`id_buku`);
 
 --
--- Indexes for table `login`
+-- Indeks untuk tabel `galeri`
+--
+ALTER TABLE `galeri`
+  ADD PRIMARY KEY (`id_galeri`);
+
+--
+-- Indeks untuk tabel `login`
 --
 ALTER TABLE `login`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `login_role`
+-- Indeks untuk tabel `login_role`
 --
 ALTER TABLE `login_role`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `penerbit`
+-- Indeks untuk tabel `penerbit`
 --
 ALTER TABLE `penerbit`
   ADD PRIMARY KEY (`id_penerbit`);
 
 --
--- Indexes for table `pengarang`
+-- Indeks untuk tabel `pengarang`
 --
 ALTER TABLE `pengarang`
   ADD PRIMARY KEY (`id_pengarang`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `login`
+-- AUTO_INCREMENT untuk tabel `galeri`
+--
+ALTER TABLE `galeri`
+  MODIFY `id_galeri` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT untuk tabel `login`
 --
 ALTER TABLE `login`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `login_role`
+-- AUTO_INCREMENT untuk tabel `login_role`
 --
 ALTER TABLE `login_role`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `pengarang`
+-- AUTO_INCREMENT untuk tabel `pengarang`
 --
 ALTER TABLE `pengarang`
-  MODIFY `id_pengarang` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_pengarang` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
