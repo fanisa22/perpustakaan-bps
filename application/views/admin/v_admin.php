@@ -17,32 +17,30 @@
                     <thead>
                             <tr>
                                     <th>Id</th>
-                                    <th>Name</th>
+                                    <th>Nama</th>
                                     <th>Username</th>
                                     <th>Password</th>
-                                    <th>Id Role</th>
-                                    <th>Is Active</th>
-                                    <th>Date Created</th>
+                                    <th>Level</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <!--<?php
+                                <?php
                                     $no = 1;
                                 foreach($data as $row) {?>
                                     <tr>
-                                        <td><?= $no++; ?></td>
-                                        <td><?= $row->id;?></td>
+                                        <td><?= $row->id; ?></td>
                                         <td><?= $row->nama;?></td>
                                         <td><?= $row->username;?></td>
                                         <td><?= $row->password;?></td>
+                                        <td><?= $row->level;?></td>
                                         <td>
-                                            <a href="<?= base_url()?>admin/edit/<?= $row->id_admin;?>" class="btn btn-success btn-sm"> Edit </a>
-                                            <a href="<?= base_url()?>admin/delete/<?= $row->id_admin;?>" class="btn btn-danger btn-sm"onclick="return confirm('Anda Yakin Ingin Menghapus Data?')"> Delete </a>
+                                            <a href="<?= base_url()?>admin/edit/<?= $row->id;?>" class="btn btn-success btn-sm"> Edit </a>
+                                            <a href="<?= base_url()?>admin/delete/<?= $row->id;?>" class="btn btn-danger btn-sm" onclick="return confirm('Anda Yakin Ingin Menghapus Data?')"> Delete </a>
                                         </td>
                                     </tr>
                                 <?php }
-                                ?>-->
+                                ?>
                             </tbody>
                     </table>
                   </div>

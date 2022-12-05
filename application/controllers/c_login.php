@@ -16,5 +16,10 @@ class C_login extends CI_Controller {
         $this->m_login->proses_login($username, $password);
     }
 
+      function logout(){
+      $this->session->sess_destroy();
+      redirect('login');
+  }
+
     
 }

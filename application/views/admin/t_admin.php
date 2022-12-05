@@ -7,6 +7,10 @@
                   </p>
                   <hr>
                   <form class="forms-sample">
+                  <div class="form-group">
+                    <label for="exampleInputName1">Id</label>
+                    <input type="text" name="id" value="<?= $id;?>"class="form-control" readonly>
+                </div>
                     <div class="form-group">
                       <label for="exampleInputName1">Nama</label>
                       <input type="text" class="form-control" id="exampleInputName1" placeholder="Nama">
@@ -25,13 +29,9 @@
                     <div class="form-group">
                     <label for="exampleInputPassword4">Level</label>
                     <select name="level" class="form-control" required>
+                        <option value=""selected> 1 </option>
+                        <option value=""selected> 2 </option>
                         <option value=""selected> - Pilih Level - </option>
-                        <?php
-
-                            foreach($login as $row) {?>
-                                <option value="<?=$row->id_admin?>"> <?=$row->nama?>
-                            <?php }
-                        ?>
                     </select>
                 </div>
                     
