@@ -25,16 +25,16 @@
 
                             <tbody>
                             <?php
-                    foreach ($data as $row) {?>
-                    <tr>
-                        <td><?= $row->id_galeri;?></td>
-                        <td><?= $row->nama;?></td>
-                        <td class="text-center">
-                            <a href="<?= base_url()?>assets/gambar/galeri/<?= $row->foto;?>" target="_blank">
-                                <img src="<?= base_url()?>assets/gambar/galeri/<?= $row->foto;?>" alt="">
-                            </a>
-                        </td>
-                        <td>
+                              foreach ($data as $row) {?>
+                              <tr>
+                                  <td><?= $row->id_galeri;?></td>
+                                  <td><?= $row->nama;?></td>
+                                  <td class="text-center">
+                                      <a href="<?= base_url()?>assets/gambar/galeri/<?= $row->foto;?>" target="_blank">
+                                          <img src="<?= base_url()?>assets/gambar/galeri/<?= $row->foto;?>" alt="">
+                                      </a>
+                                  </td>
+                                  <td>
                                 <a href="<?= base_url()?>galeri/hapus/<?= $row->id_galeri;?>" class="btn btn-danger btn-sm"onclick="return confirm('Anda Yakin Ingin Menghapus Data?')"> Delete </a>
                         </td>
                     </tr>

@@ -16,7 +16,7 @@
 
                 <div class="form-group">
                     <label for="exampleInputName1">Foto</label>
-                    <input type="file" name="foto" class="form-control" required>
+                    <input type="file" name="foto" class="form-control" accept="image/*" required>
                 </div>
                     
                     <div class="form-group">
