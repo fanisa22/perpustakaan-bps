@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.3
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 06, 2022 at 02:19 AM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.4.11
+-- Waktu pembuatan: 06 Des 2022 pada 08.34
+-- Versi server: 10.4.14-MariaDB
+-- Versi PHP: 7.4.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `buku`
+-- Struktur dari tabel `buku`
 --
 
 CREATE TABLE `buku` (
@@ -39,7 +39,7 @@ CREATE TABLE `buku` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `galeri`
+-- Struktur dari tabel `galeri`
 --
 
 CREATE TABLE `galeri` (
@@ -49,7 +49,7 @@ CREATE TABLE `galeri` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `galeri`
+-- Dumping data untuk tabel `galeri`
 --
 
 INSERT INTO `galeri` (`id_galeri`, `nama`, `foto`) VALUES
@@ -59,7 +59,7 @@ INSERT INTO `galeri` (`id_galeri`, `nama`, `foto`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `login`
+-- Struktur dari tabel `login`
 --
 
 CREATE TABLE `login` (
@@ -67,22 +67,21 @@ CREATE TABLE `login` (
   `nama` varchar(50) NOT NULL,
   `username` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
-  `level` int(11) NOT NULL,
-  `login_status` int(11) NOT NULL
+  `level` varchar(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `login`
+-- Dumping data untuk tabel `login`
 --
 
-INSERT INTO `login` (`id`, `nama`, `username`, `password`, `level`, `login_status`) VALUES
-('A001', 'Coba', 'admin', 'admin123', 1, 1),
-('A002', 'Coba2', 'admin2', 'admin456', 2, 1);
+INSERT INTO `login` (`id`, `nama`, `username`, `password`, `level`) VALUES
+('A003', 'Erlinda', 'super admin', '1234', 'Super Admin'),
+('A004', 'Erlinda Kristanti', 'admin', '1234', 'Admin');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `penerbit`
+-- Struktur dari tabel `penerbit`
 --
 
 CREATE TABLE `penerbit` (
@@ -91,7 +90,7 @@ CREATE TABLE `penerbit` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `penerbit`
+-- Dumping data untuk tabel `penerbit`
 --
 
 INSERT INTO `penerbit` (`id_penerbit`, `nama_penerbit`) VALUES
@@ -101,7 +100,7 @@ INSERT INTO `penerbit` (`id_penerbit`, `nama_penerbit`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pengarang`
+-- Struktur dari tabel `pengarang`
 --
 
 CREATE TABLE `pengarang` (
@@ -110,7 +109,7 @@ CREATE TABLE `pengarang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `pengarang`
+-- Dumping data untuk tabel `pengarang`
 --
 
 INSERT INTO `pengarang` (`id_pengarang`, `nama_pengarang`) VALUES
@@ -123,47 +122,47 @@ INSERT INTO `pengarang` (`id_pengarang`, `nama_pengarang`) VALUES
 --
 
 --
--- Indexes for table `buku`
+-- Indeks untuk tabel `buku`
 --
 ALTER TABLE `buku`
   ADD PRIMARY KEY (`id_buku`);
 
 --
--- Indexes for table `galeri`
+-- Indeks untuk tabel `galeri`
 --
 ALTER TABLE `galeri`
   ADD PRIMARY KEY (`id_galeri`);
 
 --
--- Indexes for table `login`
+-- Indeks untuk tabel `login`
 --
 ALTER TABLE `login`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `penerbit`
+-- Indeks untuk tabel `penerbit`
 --
 ALTER TABLE `penerbit`
   ADD PRIMARY KEY (`id_penerbit`);
 
 --
--- Indexes for table `pengarang`
+-- Indeks untuk tabel `pengarang`
 --
 ALTER TABLE `pengarang`
   ADD PRIMARY KEY (`id_pengarang`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `galeri`
+-- AUTO_INCREMENT untuk tabel `galeri`
 --
 ALTER TABLE `galeri`
   MODIFY `id_galeri` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `pengarang`
+-- AUTO_INCREMENT untuk tabel `pengarang`
 --
 ALTER TABLE `pengarang`
   MODIFY `id_pengarang` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
