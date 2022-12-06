@@ -13,7 +13,8 @@ class M_login extends CI_Model {
                 $sess = array(
                     'id' => $row->id ,
                     'username' => $row->username ,
-                    'password' => $row->password
+                    'password' => $row->password,
+                    'level' => $row->level
                 );
                 $this->session->set_userdata($sess);
             }
