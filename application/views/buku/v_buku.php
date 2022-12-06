@@ -33,14 +33,34 @@
                         <tr>
                           <th> Id Buku</th>
                           <th> Judul Buku</th>
-                          <th> Nama Pengarang</th>
                           <th> Nama Penerbit</th>
+                          <th> Nama Pengarang</th>
                           <th> ISBN</th>
-                          <th> Tahun</th>
+                          <th> foto</th>
                           <th> Aksi </th>
                       </thead>
                       <tbody>
-                      
+                      <?php
+                              foreach ($data->result() as $row) {?>
+                              <tr>
+                                  <td><?= $row->id_buku;?></td>
+                                  <td><?= $row->judul_buku;?></td>
+                                  <td><?= $row->nama_penerbit;?></td>
+                                  <td><?= $row->nama_pengarang;?></td>
+                                  <td><?= $row->isbn;?></td>
+                                  <td class="text-center">
+                                      <a href="<?= base_url()?>assets/gambar/buku/<?= $row->foto;?>" target="_blank">
+                                          <img src="<?= base_url()?>assets/gambar/buku/<?= $row->foto;?>" alt="">
+                                      </a>
+                                  </td>
+                                  <td>
+                                  <a href="<?= base_url()?>buku/edit/<?= $row->id_penerbit;?>" class="btn btn-success btn-sm"> Edit </a>
+                                <a href="<?= base_url()?>buku/hapus/<?= $row->id_buku;?>" class="btn btn-danger btn-sm"onclick="return confirm('Anda Yakin Ingin Menghapus Data?')"> Hapus </a>
+
+                        </td>
+                    </tr>
+                    <?php }
+                    ?>
                     </tbody>
                     </table>
                   </div>
