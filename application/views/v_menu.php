@@ -76,6 +76,12 @@
             </ul>
           </div>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?= base_url()?>admin">
+            <i class="icon-head menu-icon"></i>
+            <span class="menu-title">Admin Perpustakaan</span>
+          </a>
+        </li>
       <li class="nav-item">
           <a class="nav-link" href="<?= base_url()?>katalog">
             <i class="icon-layout menu-icon"></i>
