@@ -54,7 +54,8 @@
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#team">Catalogue</a></li>
           <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="#feedback">Feedback</a></li>
+          <li><a class="nav-link scrollto" href="#footer">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -78,7 +79,9 @@
           </div>
         </div>
         <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
-          <img src="<?php echo base_url();?>Bootslander/assets/img/hero-img.png" class="img-fluid animated" alt="">
+          <br><br><br><br><br>
+          <img src="<?php echo base_url();?>Bootslander/assets/img/book1.png" class="img-fluid animated" alt="" width="574" height="766">
+          </br></br></br></br>
         </div>
       </div>
     </div>
@@ -102,414 +105,388 @@
 
   <main id="main">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-        <div class="section-title" data-aos="fade-up">
-          <h2>About</h2>
-          <p>About Us</p>
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>About Us</p>
+      </div>
+
+      <div class="row">
+        <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch" data-aos="fade-right">
+          <a href="<?php echo base_url();?>video/perpus.mp4" class="glightbox play-btn mb-4"></a>
         </div>
 
-        <div class="row">
-          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch" data-aos="fade-right">
-            <a href="<?php echo base_url();?>video/perpus.mp4" class="glightbox play-btn mb-4"></a>
+        <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
+          <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
+          <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla tenetur. Suscipit aut voluptate.</p>
+
+          <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon"><i class="bx bx-fingerprint"></i></div>
+            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
           </div>
 
-          <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
-            <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
-            <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla tenetur. Suscipit aut voluptate.</p>
+          <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon"><i class="bx bx-gift"></i></div>
+            <h4 class="title"><a href="">Nemo Enim</a></h4>
+            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+          </div>
 
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon"><i class="bx bx-atom"></i></div>
+            <h4 class="title"><a href="">Dine Pad</a></h4>
+            <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End About Section -->
+
+  <!-- ======= Catalogue Section ======= -->
+  <section id="team" class="team">
+    <div class="container">
+
+      <div class="section-title" data-aos="fade-up">
+        <h2>Catalogue</h2>
+        <p>Check Our Catalogue</p>
+      </div>
+
+      <div class="row" data-aos="fade-left">
+
+        <div class="col-lg-3 col-md-6">
+          <div class="member" data-aos="zoom-in" data-aos-delay="100">
+            <div class="pic"><img src="<?php echo base_url();?>Bootslander/assets/img/team/bk2.png" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Walter White</h4>
+              <!-- <span>Chief Executive Officer</span> -->
+              <a href="<?= base_url()?>detailbuku" class="text-primary"><span>Selengkapnya</span></a>
             </div>
+          </div>
+        </div>
 
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-              <div class="icon"><i class="bx bx-gift"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+        <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+          <div class="member" data-aos="zoom-in" data-aos-delay="200">
+            <div class="pic"><img src="<?php echo base_url();?>Bootslander/assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Sarah Jhonson</h4>
+              <!-- <span>Product Manager</span> -->
+              <a href="register.html" class="text-primary"><span>Selengkapnya</span></a>
             </div>
+          </div>
+        </div>
 
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
-              <div class="icon"><i class="bx bx-atom"></i></div>
-              <h4 class="title"><a href="">Dine Pad</a></h4>
-              <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="member" data-aos="zoom-in" data-aos-delay="300">
+            <div class="pic"><img src="<?php echo base_url();?>Bootslander/assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>William Anderson</h4>
+              <!-- <span>CTO</span> -->
+              <a href="register.html" class="text-primary"><span>Selengkapnya</span></a>
             </div>
+          </div>
+        </div>
 
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="member" data-aos="zoom-in" data-aos-delay="400">
+            <div class="pic"><img src="<?php echo base_url();?>Bootslander/assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Amanda Jepson</h4>
+              <!-- <span>Accountant</span> -->
+              <a href="register.html" class="text-primary"><span>Selengkapnya</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+              <br><br>
+              <a href="<?= base_url()?>katalog" class="btn-get-started scrollto">More Catalogue</a>
+              </br>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Catalogue Section -->
+
+  <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+    <div class="container">
+
+      <div class="section-title" data-aos="fade-up">
+        <center><h3>Koleksi Perpustakaan</h3><center>
+      </div>
+
+      <div class="row" data-aos="fade-up">
+
+        <div class="col-lg-3 col-md-6">
+          <div class="count-box">
+            <i class="bi bi-emoji-smile"></i>
+            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Statistik</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+          <div class="count-box">
+            <i class="bi bi-journal-richtext"></i>
+            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Penduduk</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <i class="bi bi-headset"></i>
+            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Ekonomi</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <i class="bi bi-people"></i>
+            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Pertanian</p>
           </div>
         </div>
 
       </div>
-    </section><!-- End About Section -->
 
-    <!-- ======= Catalogue Section ======= -->
-    <section id="team" class="team">
-      <div class="container">
+    </div>
+  </section><!-- End Counts Section -->
 
-        <div class="section-title" data-aos="fade-up">
-          <h2>Catalogue</h2>
-          <p>Check Our Catalogue</p>
+  <!-- ======= Gallery Section ======= -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+
+      <div class="section-title" data-aos="fade-up">
+        <h2>Gallery</h2>
+        <p>Check our Gallery</p>
+      </div>
+
+      <div class="row g-0" data-aos="fade-left">
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+            <a href="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-1.jpg" class="gallery-lightbox">
+              <img src="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
         </div>
 
-        <div class="row" data-aos="fade-left">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member" data-aos="zoom-in" data-aos-delay="100">
-              <div class="pic"><img src="<?php echo base_url();?>Bootslander/assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <!-- <span>Chief Executive Officer</span> -->
-                <a href="<?= base_url()?>katalog" class="text-primary"><span>Selengkapnya</span></a>
-              </div>
-            </div>
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item" data-aos="zoom-in" data-aos-delay="150">
+            <a href="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-2.jpg" class="gallery-lightbox">
+              <img src="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+            </a>
           </div>
+        </div>
 
-          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-            <div class="member" data-aos="zoom-in" data-aos-delay="200">
-              <div class="pic"><img src="<?php echo base_url();?>Bootslander/assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <!-- <span>Product Manager</span> -->
-                <a href="register.html" class="text-primary"><span>Selengkapnya</span></a>
-              </div>
-            </div>
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+            <a href="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-3.jpg" class="gallery-lightbox">
+              <img src="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+            </a>
           </div>
+        </div>
 
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="member" data-aos="zoom-in" data-aos-delay="300">
-              <div class="pic"><img src="<?php echo base_url();?>Bootslander/assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <!-- <span>CTO</span> -->
-                <a href="register.html" class="text-primary"><span>Selengkapnya</span></a>
-              </div>
-            </div>
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item" data-aos="zoom-in" data-aos-delay="250">
+            <a href="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-4.jpg" class="gallery-lightbox">
+              <img src="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+            </a>
           </div>
+        </div>
 
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="member" data-aos="zoom-in" data-aos-delay="400">
-              <div class="pic"><img src="<?php echo base_url();?>Bootslander/assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <!-- <span>Accountant</span> -->
-                <a href="register.html" class="text-primary"><span>Selengkapnya</span></a>
-              </div>
-            </div>
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+            <a href="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-5.jpg" class="gallery-lightbox">
+              <img src="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item" data-aos="zoom-in" data-aos-delay="350">
+            <a href="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-6.jpg" class="gallery-lightbox">
+              <img src="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+            <a href="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-7.jpg" class="gallery-lightbox">
+              <img src="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item" data-aos="zoom-in" data-aos-delay="450">
+            <a href="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-8.jpg" class="gallery-lightbox">
+              <img src="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+            </a>
           </div>
         </div>
 
       </div>
-    </section><!-- End Catalogue Section -->
 
-    <!-- ======= Counts Section ======= -->
-     <section id="counts" class="counts">
-      <div class="container">
+    </div>
+  </section><!-- End Gallery Section -->
 
-        <div class="section-title" data-aos="fade-up">
-          <h4>Koleksi Perpustakaan</h4>
+  <!-- ======= Testimonials Section ======= -->
+  <section id="testimonials" class="testimonials">  
+    <div class="container">
+
+      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <img src="<?php echo base_url();?>Bootslander/assets/img/testimonials/Margo-Yuwono.jpg" class="testimonial-img" alt="">
+              <h3>Margo Yuwono</h3>
+              <h4>Kepala BPS</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Bersama-bersama, kita telah membuktikan bahwa BPS tetap mampu menyediakan data secara tepat waktu dan tetap menjaga kualitasnya sesuai dengan komitmen yang kita bangun dari awal.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <img src="<?php echo base_url();?>Bootslander/assets/img/testimonials/ss.jpg" class="testimonial-img" alt="">
+              <h3>Setianto</h3>
+              <h4>Deputi BPS</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Statistik bukan sekedar angka, tapi kunci menuju kesuksesan dan kesejahteraan.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div><!-- End testimonial item -->
+          
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <img src="<?php echo base_url();?>Bootslander/assets/img/testimonials/AE.jpg" class="testimonial-img" alt="">
+              <h3>Albert Einstein</h3>
+              <h4>Fisikawan</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                The only thing that you absolutely have to know, is the location of the library.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <img src="<?php echo base_url();?>Bootslander/assets/img/testimonials/Najwa-Sihab.jpg" class="testimonial-img" alt="">
+              <h3>Najwa Shihab</h3>
+              <h4>Jurnalis</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Membaca ialah upaya merekuk makna ikhtiar untuk memahami alam semesta. Itulah mengapa buku disebut jendela dunia, yang merangsang pikiran agar terus terbuka.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <img src="<?php echo base_url();?>Bootslander/assets/img/testimonials/Fran-Lebowitz.jpg" class="testimonial-img" alt="">
+              <h3>Fran Lebowitz</h3>
+              <h4>Penulis</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Think before you speak. Read before you think.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div><!-- End testimonial item -->
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+  </section><!-- End Testimonials Section -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="feedback" class="contact">
+    <div class="container" >
+
+      <div class="section-title" data-aos="fade-up">
+        <h2>Feedback</h2>
+        <p>Feedback</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+          <div class="info">
+            <div class="address">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Location:</h4>
+              <p>Jl. Janti Barat Nomor 47, Sukun, Kota Malang</p>
+            </div>
+
+            <div class="email">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p>bps3573@bps.go.id<</p>
+            </div>
+
+            <div class="phone">
+              <i class="bi bi-phone"></i>
+              <h4>Call:</h4>
+              <p>0341-801164</p>
+            </div>
+
+          </div>
+
         </div>
 
-        <div class="row" data-aos="fade-up">
+        <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
+          <div class="section-title" data-aos="fade-up">
+            <h3>Berikan Kritik dan Saran</h3>
+           </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="count-box">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Happy Clients</p>
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
             </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-            <div class="count-box">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Projects</p>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
             </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hours Of Support</p>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
             </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hard Workers</p>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
             </div>
-          </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
 
         </div>
 
       </div>
-    </section><!-- End Counts Section -->
 
-    <!-- <section> 
-      <div id="flipbook">
-	      <div class="hard"> Turn.js </div>
-	      <div class="hard"></div>
-	      <div> Page 1 </div>
-        <div> Page 2 </div>
-        <div> Page 3 </div>
-        <div> Page 4 </div>
-        <div class="hard"></div>
-        <div class="hard"></div>
-      </div>
-
-      <script type="text/javascript">
-      $("#flipbook").turn({
-        width: 400,
-        height: 300,
-        autoCenter: true
-      });
-      </script>
-    </section> -->
-
-    <!-- ======= Features Section ======= -->
-    <!-- End Features Section -->
-
-    <!-- ======= Details Section ======= -->
-    <!-- End Details Section -->
-
-    <!-- ======= Gallery Section ======= -->
-    <section id="gallery" class="gallery">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Gallery</h2>
-          <p>Check our Gallery</p>
-        </div>
-
-        <div class="row g-0" data-aos="fade-left">
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
-              <a href="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-1.jpg" class="gallery-lightbox">
-                <img src="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="150">
-              <a href="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-2.jpg" class="gallery-lightbox">
-                <img src="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
-              <a href="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-3.jpg" class="gallery-lightbox">
-                <img src="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="250">
-              <a href="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-4.jpg" class="gallery-lightbox">
-                <img src="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
-              <a href="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-5.jpg" class="gallery-lightbox">
-                <img src="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="350">
-              <a href="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-6.jpg" class="gallery-lightbox">
-                <img src="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
-              <a href="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-7.jpg" class="gallery-lightbox">
-                <img src="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="450">
-              <a href="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-8.jpg" class="gallery-lightbox">
-                <img src="<?php echo base_url();?>Bootslander/assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Gallery Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
-      <div class="container">
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="<?php echo base_url();?>Bootslander/assets/img/testimonials/Margo-Yuwono.jpg" class="testimonial-img" alt="">
-                <h3>Margo Yuwono</h3>
-                <h4>Kepala BPS</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Bersama-bersama, kita telah membuktikan bahwa BPS tetap mampu menyediakan data secara tepat waktu dan tetap menjaga kualitasnya sesuai dengan komitmen yang kita bangun dari awal.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="<?php echo base_url();?>Bootslander/assets/img/testimonials/ss.jpg" class="testimonial-img" alt="">
-                <h3>Setianto</h3>
-                <h4>Deputi BPS</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Statistik bukan sekedar angka, tapi kunci menuju kesuksesan dan kesejahteraan.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-            
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="<?php echo base_url();?>Bootslander/assets/img/testimonials/AE.jpg" class="testimonial-img" alt="">
-                <h3>Albert Einstein</h3>
-                <h4>Fisikawan</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  The only thing that you absolutely have to know, is the location of the library.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="<?php echo base_url();?>Bootslander/assets/img/testimonials/Najwa-Sihab.jpg" class="testimonial-img" alt="">
-                <h3>Najwa Shihab</h3>
-                <h4>Jurnalis</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Membaca ialah upaya merekuk makna ikhtiar untuk memahami alam semesta. Itulah mengapa buku disebut jendela dunia, yang merangsang pikiran agar terus terbuka.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="<?php echo base_url();?>Bootslander/assets/img/testimonials/Fran-Lebowitz.jpg" class="testimonial-img" alt="">
-                <h3>Fran Lebowitz</h3>
-                <h4>Penulis</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Think before you speak. Read before you think.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
-
-    <!-- ======= Team Section ======= -->
-    <!-- End Team Section -->
-
-    <!-- ======= Pricing Section ======= -->
-    <!-- End Pricing Section -->
-
-    <!-- ======= F.A.Q Section ======= -->
-    <!-- End F.A.Q Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Contact</h2>
-          <p>Contact Us</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Jl. Janti Barat Nomor 47, Sukun, Kota Malang</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>bps3573@bps.go.id<</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>0341-801164</p>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
+    </div>
+  </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
 
@@ -518,6 +495,11 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
+          <!-- <div class="section-title" data-aos="fade-up">
+            <h2>Contact</h2>
+            <p>Contact</p>
+          </div> -->
+          
 
           <div class="col-lg-4 col-md-6">
             <div class="footer-info">
