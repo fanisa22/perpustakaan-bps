@@ -5,6 +5,6 @@ class Katalog extends CI_Controller{
 
     public function index()
     {
-        $this->load->view('v_katalog');
+        $this->load->view('katalog/v_katalog');
     }
 }

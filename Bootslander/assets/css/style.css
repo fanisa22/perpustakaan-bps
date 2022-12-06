@@ -52,7 +52,7 @@ h6 {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #1acc8d;
-  border-top-color: #d2f9eb;
+  border-top-color: #f9e5d2;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -422,14 +422,15 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  background: url("../img/hero-bg.jpg");
+  background: url("../img/perpus.jpg");
   position: relative;
   padding: 120px 0 0 0;
 }
 
 #hero:before {
   content: "";
-  background: rgba(2, 5, 161, 0.91);
+  /* background: rgba(78, 80, 235, 0.91); */
+  background: rgba(1, 3, 111, 0.8);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -499,6 +500,7 @@ h6 {
 
   #hero .hero-img img {
     max-width: 50%;
+
   }
 
   #hero h1 {
@@ -806,7 +808,7 @@ section {
 }
 
 .about .video-box {
-  background: url("../img/about.png") center center no-repeat;
+  background: url("../img/illustration-3.png") center center no-repeat;
   background-size: contain;
   min-height: 300px;
 }
@@ -994,6 +996,15 @@ section {
   font-size: 14px;
 }
 
+.counts .section-title h3 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #01036f;
+  position: relative;
+  padding-bottom: 10px;
+}
+
 /*--------------------------------------------------------------
 # Details
 --------------------------------------------------------------*/
@@ -1048,7 +1059,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("../img/cta-bg.jpg") no-repeat;
+  background: url("../img/buku4.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -1156,6 +1167,7 @@ section {
 --------------------------------------------------------------*/
 .team {
   background: #fff;
+  /* background: rgb(190, 187, 209); */
 }
 
 .team .member {
@@ -1183,6 +1195,7 @@ section {
   left: 0px;
   right: 0px;
   background: rgba(255, 255, 255, 0.9);
+  /* background: rgba(166, 170, 230, 0.9); */
   padding: 15px 0;
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -1231,6 +1244,24 @@ section {
 .team .member .social i {
   font-size: 16px;
   margin: 0 2px;
+}
+
+.team .btn-get-started {
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #fff;
+  background: #1acc8d;
+}
+
+.team .btn-get-started:hover {
+  background: #17b57d;
 }
 
 /*--------------------------------------------------------------
@@ -1577,7 +1608,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #010351;
+  background: #f2f2f7;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
@@ -1589,11 +1620,21 @@ section {
 
 #footer .footer-top .footer-info {
   margin-bottom: 15px;
-  background: #010246;
+  background: #e6e6ee;
   color: #fff;
   border-top: 4px solid #1acc8d;
   text-align: center;
   padding: 30px 20px;
+}
+
+#footer .footer-top .section-title {
+  margin: 0;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #f8f8fa;
 }
 
 #footer .footer-top .footer-info h3 {
@@ -1728,3 +1769,7 @@ section {
     margin: -20px 0 30px 0;
   }
 }
+
+/*--------------------------------------------------------------
+# Catalogue
+--------------------------------------------------------------*/
