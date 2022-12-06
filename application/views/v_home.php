@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="<?= base_url()?>assets/gambar/logo.png" rel="icon">
+  <link href="<?php echo base_url()?>assets/gambar/logo.png" rel="icon">
   <link href="<?php echo base_url();?>Bootslander/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -74,7 +74,7 @@
             <span>BPS Kota Malang</span></h1>
             <h2>Melayani dengan Profesional, Integritas dan Amanah</h2>
             <div class="d-flex justify-content-center justify-content-lg-start">
-                <a href="#about" class="btn-get-started scrollto">Get Started</a>
+                <a href="katalog" class="btn-get-started scrollto">Get Started</a>
             </div>
           </div>
         </div>
