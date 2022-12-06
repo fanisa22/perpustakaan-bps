@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.0.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 05 Des 2022 pada 02.11
--- Versi server: 10.4.14-MariaDB
--- Versi PHP: 7.4.10
+-- Generation Time: Dec 06, 2022 at 02:19 AM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.4.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `buku`
+-- Table structure for table `buku`
 --
 
 CREATE TABLE `buku` (
@@ -39,7 +39,7 @@ CREATE TABLE `buku` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `galeri`
+-- Table structure for table `galeri`
 --
 
 CREATE TABLE `galeri` (
@@ -49,7 +49,7 @@ CREATE TABLE `galeri` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `galeri`
+-- Dumping data for table `galeri`
 --
 
 INSERT INTO `galeri` (`id_galeri`, `nama`, `foto`) VALUES
@@ -59,49 +59,30 @@ INSERT INTO `galeri` (`id_galeri`, `nama`, `foto`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `login`
+-- Table structure for table `login`
 --
 
 CREATE TABLE `login` (
-  `id` int(11) NOT NULL,
+  `id` varchar(50) NOT NULL,
   `nama` varchar(50) NOT NULL,
   `username` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
-  `role_id` int(11) NOT NULL,
-  `is_active` int(1) NOT NULL,
-  `date_created` int(50) NOT NULL
+  `level` int(11) NOT NULL,
+  `login_status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `login`
+-- Dumping data for table `login`
 --
 
-INSERT INTO `login` (`id`, `nama`, `username`, `password`, `role_id`, `is_active`, `date_created`) VALUES
-(1, '', 'admin', 'admin123', 0, 0, 0);
+INSERT INTO `login` (`id`, `nama`, `username`, `password`, `level`, `login_status`) VALUES
+('A001', 'Coba', 'admin', 'admin123', 1, 1),
+('A002', 'Coba2', 'admin2', 'admin456', 2, 1);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `login_role`
---
-
-CREATE TABLE `login_role` (
-  `id` int(11) NOT NULL,
-  `role` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data untuk tabel `login_role`
---
-
-INSERT INTO `login_role` (`id`, `role`) VALUES
-(1, 'Superadmin'),
-(2, 'Admin');
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `penerbit`
+-- Table structure for table `penerbit`
 --
 
 CREATE TABLE `penerbit` (
@@ -110,7 +91,7 @@ CREATE TABLE `penerbit` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `penerbit`
+-- Dumping data for table `penerbit`
 --
 
 INSERT INTO `penerbit` (`id_penerbit`, `nama_penerbit`) VALUES
@@ -120,7 +101,7 @@ INSERT INTO `penerbit` (`id_penerbit`, `nama_penerbit`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `pengarang`
+-- Table structure for table `pengarang`
 --
 
 CREATE TABLE `pengarang` (
@@ -129,7 +110,7 @@ CREATE TABLE `pengarang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `pengarang`
+-- Dumping data for table `pengarang`
 --
 
 INSERT INTO `pengarang` (`id_pengarang`, `nama_pengarang`) VALUES
@@ -142,65 +123,47 @@ INSERT INTO `pengarang` (`id_pengarang`, `nama_pengarang`) VALUES
 --
 
 --
--- Indeks untuk tabel `buku`
+-- Indexes for table `buku`
 --
 ALTER TABLE `buku`
   ADD PRIMARY KEY (`id_buku`);
 
 --
--- Indeks untuk tabel `galeri`
+-- Indexes for table `galeri`
 --
 ALTER TABLE `galeri`
   ADD PRIMARY KEY (`id_galeri`);
 
 --
--- Indeks untuk tabel `login`
+-- Indexes for table `login`
 --
 ALTER TABLE `login`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `login_role`
---
-ALTER TABLE `login_role`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indeks untuk tabel `penerbit`
+-- Indexes for table `penerbit`
 --
 ALTER TABLE `penerbit`
   ADD PRIMARY KEY (`id_penerbit`);
 
 --
--- Indeks untuk tabel `pengarang`
+-- Indexes for table `pengarang`
 --
 ALTER TABLE `pengarang`
   ADD PRIMARY KEY (`id_pengarang`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `galeri`
+-- AUTO_INCREMENT for table `galeri`
 --
 ALTER TABLE `galeri`
   MODIFY `id_galeri` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT untuk tabel `login`
---
-ALTER TABLE `login`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT untuk tabel `login_role`
---
-ALTER TABLE `login_role`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT untuk tabel `pengarang`
+-- AUTO_INCREMENT for table `pengarang`
 --
 ALTER TABLE `pengarang`
   MODIFY `id_pengarang` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
