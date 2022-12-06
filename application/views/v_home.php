@@ -54,8 +54,7 @@
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#team">Catalogue</a></li>
           <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
-          <li><a class="nav-link scrollto" href="#feedback">Feedback</a></li>
-          <li><a class="nav-link scrollto" href="#footer">Contact</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -74,7 +73,7 @@
             <span>BPS Kota Malang</span></h1>
             <h2>Melayani dengan Profesional, Integritas dan Amanah</h2>
             <div class="d-flex justify-content-center justify-content-lg-start">
-                <a href="katalog" class="btn-get-started scrollto">Get Started</a>
+                <a href="katalog" class="btn-get-started scrollto">Our Catalogue</a>
             </div>
           </div>
         </div>
@@ -213,7 +212,7 @@
   </section><!-- End Catalogue Section -->
 
   <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts">
+    <!-- <section id="counts" class="counts">
     <div class="container">
 
       <div class="section-title" data-aos="fade-up">
@@ -256,8 +255,8 @@
 
       </div>
 
-    </div>
-  </section><!-- End Counts Section -->
+    </div> -->
+  <!-- </section>End Counts Section -->
 
   <!-- ======= Gallery Section ======= -->
   <section id="gallery" class="gallery">
@@ -419,59 +418,58 @@
   </section><!-- End Testimonials Section -->
 
   <!-- ======= Contact Section ======= -->
-  <section id="feedback" class="contact">
-    <div class="container" >
+  <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
 
       <div class="section-title" data-aos="fade-up">
-        <h2>Feedback</h2>
-        <p>Feedback</p>
+        <h2>Contact</h2>
+        <p>Contact</p>
       </div>
 
       <div class="row">
 
-        <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+        <div class="col-lg-5 d-flex align-items-stretch">
           <div class="info">
             <div class="address">
               <i class="bi bi-geo-alt"></i>
-              <h4>Location:</h4>
-              <p>Jl. Janti Barat Nomor 47, Sukun, Kota Malang</p>
+              <h4>Lokasi:</h4>
+              <p>Jl. Janti Barat Nomor 47, Sukun, Kota Malang, Indonesia</p>
             </div>
 
             <div class="email">
               <i class="bi bi-envelope"></i>
               <h4>Email:</h4>
-              <p>bps3573@bps.go.id<</p>
+              <p>bps3573@bps.go.id</p>
             </div>
 
             <div class="phone">
               <i class="bi bi-phone"></i>
-              <h4>Call:</h4>
+              <h4>Telepon:</h4>
               <p>0341-801164</p>
             </div>
 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.976356099664!2d112.6189741141568!3d-8.001374982035772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd628003e38fe73%3A0x3aa76fdd366c7827!2sBadan%20Pusat%20Statistik%20(BPS)%20Kota%20Malang!5e0!3m2!1sid!2sid!4v1670313704268!5m2!1sid!2sid" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
           </div>
-
         </div>
 
-        <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
-          <div class="section-title" data-aos="fade-up">
-            <h3>Berikan Kritik dan Saran</h3>
-           </div>
-
+        <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
           <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="section-title" data-aos="fade-up">
+              <h2>Berikan Kritik dan Saran</h2>
+              </div>
             <div class="row">
-              <div class="col-md-6 form-group">
+              <div class="form-group col-md-6">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
               </div>
-              <div class="col-md-6 form-group mt-3 mt-md-0">
+              <div class="form-group col-md-6">
                 <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
               </div>
             </div>
-            <div class="form-group mt-3">
+            <div class="form-group">
               <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
             </div>
-            <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="10" placeholder="Message" required></textarea>
             </div>
             <div class="my-3">
               <div class="loading">Loading</div>
@@ -480,13 +478,13 @@
             </div>
             <div class="text-center"><button type="submit">Send Message</button></div>
           </form>
-
         </div>
 
       </div>
 
     </div>
   </section><!-- End Contact Section -->
+
 
   </main><!-- End #main -->
 
@@ -501,19 +499,19 @@
           </div> -->
           
 
-          <div class="col-lg-4 col-md-6">
+          <!-- <div class="col-lg-4 col-md-6">
             <div class="footer-info">
-              <h3>BPS Kota Malang</h3>
+              <h3>BPS Kota Malang</h3> -->
               <!-- <p class="pb-3"><em>Qui repudiandae et eum dolores alias sed ea. Qui suscipit veniam excepturi quod.</em></p> -->
-              <p>
+              <!-- <p>
                 Jl. Janti Barat No. 47 Malang 65148<br>
                 Indonesia<br><br>
-                <strong>Phone:</strong> (0341) 801164<br>
+                <strong>Phone:</strong> (0341) 801164<br> -->
                 <!-- <strong>Faks:</strong> (0341) 805871<br> -->
-                <strong>Email:</strong> bps3573@bps.go.id<br>
+                <!-- <strong>Email:</strong> bps3573@bps.go.id<br>
               </p>
             </div>
-          </div>
+          </div> -->
 
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Tautan</h4>
