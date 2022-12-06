@@ -1,7 +1,9 @@
+
+<?php
+  if ($this->session->userdata('level') == 'Super Admin') {?>
+
 <!-- partial:partials/_sidebar.html -->
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
-  <!--ACCESS MENUS FOR SUPERADMIN-->
-  <?php if($this->session->userdata('level')==='1'):?>
       
       <ul class="nav">
         <li class="nav-item">
@@ -53,9 +55,13 @@
           </a>
         </li>
 
-      <!--ACCESS MENUS FOR ADMIN-->
-      <?php elseif($this->session->userdata('level')==='2'):?>
-        <ul class="nav">
+      
+      </ul>
+    </nav>
+    <?php } else { ?>
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+      
+      <ul class="nav">
         <li class="nav-item">
           <a class="nav-link" href="<?= base_url()?>dashboard">
             <i class="icon-grid menu-icon"></i>
@@ -76,12 +82,7 @@
             </ul>
           </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="<?= base_url()?>admin">
-            <i class="icon-head menu-icon"></i>
-            <span class="menu-title">Admin Perpustakaan</span>
-          </a>
-        </li>
+        
       <li class="nav-item">
           <a class="nav-link" href="<?= base_url()?>katalog">
             <i class="icon-layout menu-icon"></i>
@@ -103,6 +104,8 @@
           </a>
         </li>
 
-        <?php endif;?>
+      
       </ul>
     </nav>
+    <?php }
+?>

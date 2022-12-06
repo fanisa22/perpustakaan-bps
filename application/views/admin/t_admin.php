@@ -25,9 +25,13 @@
                     <input type="password" name="password" class="form-control" placeholder="Input Password" required>
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputName1">Level</label>
-                    <input type="text" name="level" class="form-control" placeholder="Level" required>
-                </div>
+                <label for="exampleInputPassword1">Level</label>
+                 <select name="level" class="form-control"required>
+                    <option value=""> - Pilih Jenis Level - </option>
+                    <option value="Super Admin"> Super Admin</option>
+                    <option value="Admin"> Admin </option>
+                </select>
+                  </div>
                     
                     <div class="form-group">
                     <button type="submit" class="btn btn-primary"> Simpan </button>
