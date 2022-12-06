@@ -37,8 +37,9 @@
 
               <div class="text-center">  
               <h4>LOGIN</h4>
-               <h6 class="font-weight-light">BPS Kota Malang</h6>
-      </div>
+               <h5 class="font-weight-light">Perpustakaan BPS Kota Malang</h5>
+              </div>
+              <br>
                 <form method="post" action="<?= base_url()?>c_login" class="admin"> 
                 <div class="form-group">
                   <input type="text" name="username" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Username">
