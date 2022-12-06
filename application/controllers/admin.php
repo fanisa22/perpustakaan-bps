@@ -28,12 +28,15 @@ class Admin Extends CI_Controller{
     {
         $data = array(
             'id' => $this->input->post('id'),
-            'nama' => $this->input->post('nama')
+            'nama' => $this->input->post('nama'),
+            'username' => $this->input->post('username'),
+            'password' => $this->input->post('password'),
+            'level' => $this->input->post('level')
 
         );
         $query = $this->db->insert('login', $data);
         if($query = true){
-            $this->session->set_flashdata('info', 'Data Penerbit Berhasil Disimpan');
+            $this->session->set_flashdata('info', 'Data Admin Berhasil Disimpan');
             redirect('admin','refresh');
         }
     }
@@ -51,12 +54,15 @@ class Admin Extends CI_Controller{
 
         $data = array(
             'id' => $this->input->post('id'),
-            'nama' => $this->input->post('nama')
+            'nama' => $this->input->post('nama'),
+            'username' => $this->input->post('username'),
+            'password' => $this->input->post('password'),
+            'level' => $this->input->post('level')
 
         );
         $query = $this->m_admin->update($id, $data);
         if($query = true){
-            $this->session->set_flashdata('info', 'Data Penerbit Berhasil Diupdate');
+            $this->session->set_flashdata('info', 'Data Admin Berhasil Diupdate');
             redirect('admin');
         }
     }

@@ -29,9 +29,8 @@
                     <input type="text" name="password"  value="<?= $admin['password'];?>" class="form-control" placeholder="Input Password" required>
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword4">Level</label>
-                    <select name="level" value="<?= $admin['level'];?>" class="form-control" required>
-                    </select>
+                    <label for="exampleInputName1">Level</label>
+                    <input type="text" name="level"  value="<?= $admin['level'];?>" class="form-control" placeholder="Input Level" required>
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary"> Update </button>
