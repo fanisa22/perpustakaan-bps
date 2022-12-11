@@ -8,7 +8,7 @@
                   <hr>
                   <form method="post" action="<?= base_url()?>pengarang/update">
                   <div class="form-group">
-                      <label for="exampleInputName1">IdPengarang</label>
+                      <label for="exampleInputName1">Id Pengarang</label>
                       <input type="text" name="id_pengarang" value="<?= $data['id_pengarang'];?>" class="form-control" id="exampleInputName1" readonly>
                     </div>
 

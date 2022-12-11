@@ -4,10 +4,6 @@
 
 <!-- partial:partials/_sidebar.html -->
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
-<<<<<<< HEAD
-=======
-      
->>>>>>> 2ced0cc4d2e1ad4a5e5942e356bd8c37bd5c39da
       <ul class="nav">
         <li class="nav-item">
           <a class="nav-link" href="<?= base_url()?>dashboard">
@@ -57,10 +53,8 @@
             <span class="menu-title">Feedback</span>
           </a>
         </li>
-<<<<<<< HEAD
         <ul>
     </nav>
-=======
 
       
       </ul>
@@ -116,4 +110,3 @@
     </nav>
     <?php }
 ?>
->>>>>>> 2ced0cc4d2e1ad4a5e5942e356bd8c37bd5c39da

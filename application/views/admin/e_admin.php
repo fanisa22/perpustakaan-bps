@@ -30,7 +30,17 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleInputName1">Level</label>
-                    <input type="text" name="level"  value="<?= $admin['level'];?>" class="form-control" placeholder="Input Level" required>
+                    <select name="level" class="form-control"required>
+                 <?php 
+                    if ($admin['level'] == "Super Admin") {?>
+                        <option value="Super Admin" selected> Super Admin </option>
+                        <option value="Admin"> Admin </option>
+                    <?php } else {?>
+                        <option value="Super Admin" > Super Admin </option>
+                        <option value="Admin" selected> Admin </option>
+                    <?php }
+                    ?>
+                </select>
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary"> Update </button>

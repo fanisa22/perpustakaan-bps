@@ -27,7 +27,7 @@ class Buku Extends CI_Controller{
 
     public function simpan()
     {
-        $config['upload_path']		= 'assets/gambar/buku';
+        $config['upload_path']		= 'assets/buku/gambar';
 		$config['allowed_types']	= 'jpg|jpeg|png';
 		$config['max_size']			= '2048';
 		$this->load->library('upload', $config);
@@ -41,48 +41,86 @@ class Buku Extends CI_Controller{
             'isbn'            => $this-> input->post('isbn'),
             'tahun'           => $this-> input->post('tahun'),
             'halaman'         => $this-> input->post('halaman'),
-            'foto'            => $file_name['file_name']
+            'foto'            => $file_name['file_name'],
+
         );
         $query = $this->db->insert('buku', $data);
         if ($query = true){
             $this->session->set_flashdata('info', 'Data Berhasil di Simpan!');
             redirect('buku');
         }
-    }
+        			
+}
 
     public function edit($id)
     {
         $isi['content'] = 'buku/e_buku';
+        $isi['pengarang'] = $this->db->get('pengarang')->result();
+        $isi['penerbit'] = $this->db->get('penerbit')->result();
         $isi['data'] = $this->m_buku->edit($id); 
         $this->load->view('v_dashboard', $isi);
+        
     }
+
     public function update()
     {
         $id_buku = $this->input->post('id_buku');
+        $config['upload_path'] = 'assets/buku/gambar';
+        $config['allowed_types'] = 'jpg|png';
+        $config['max_size'] = '2048';
 
-        $data = array(
-            'id_buku'         => $this-> input->post('id_buku'),
-            'judul_buku'      => $this-> input->post('judul_buku'),
-            'id_penerbit'     => $this-> input->post('id_penerbit'),
-            'id_pengarang'    => $this-> input->post('id_pengarang'),
-            'isbn'            => $this-> input->post('isbn'),
-            'tahun'           => $this-> input->post('tahun'),
-            'halaman'         => $this-> input->post('halaman'),
-            'foto'            => $file_name['file_name']
-        );
-        $query = $this->m_buku->update($id_buku, $data);
-        if($query = true){
-            $this->session->set_flashdata('info', 'Data Buku Berhasil Diupdate');
-            redirect('buku');
-        }
+        $this->load->library('upload', $config);
+
+        if (!empty($_FILES['foto']['name'])) {
+            $this->upload->do_upload('foto');
+            $upload = $this->upload->data();
+            $gambar = $upload['file_name'];
+            $data = array(
+                'id_buku'         => $this-> input->post('id_buku'),
+                'judul_buku'      => $this-> input->post('judul_buku'),
+                'id_penerbit'     => $this-> input->post('id_penerbit'),
+                'id_pengarang'    => $this-> input->post('id_pengarang'),
+                'isbn'            => $this-> input->post('isbn'),
+                'tahun'           => $this-> input->post('tahun'),
+                'halaman'         => $this-> input->post('halaman'),
+                'foto' => $gambar,
+                
+            );
+            $_id = $this->db->get_where('buku', ['id_buku' => $id_buku])->row();
+            $query = $this->m_buku->update($id_buku, $data);
+            if ($query = true) {
+                $this->session->set_flashdata('info', 'Data Berhasil di Update');
+                unlink('assets/gambar/buku/'.$_id->foto);
+                redirect('buku', 'refresh');
+            }
+        }else{
+            $data = array(
+                'id_buku'         => $this-> input->post('id_buku'),
+                'judul_buku'      => $this-> input->post('judul_buku'),
+                'id_penerbit'     => $this-> input->post('id_penerbit'),
+                'id_pengarang'    => $this-> input->post('id_pengarang'),
+                'isbn'            => $this-> input->post('isbn'),
+                'tahun'           => $this-> input->post('tahun'),
+                'halaman'         => $this-> input->post('halaman'),
+            ); 
+            $query = $this->m_buku->update($id_buku, $data);
+            if ($query = true) {
+                $this->session->set_flashdata('info', 'Data Berhasil di Update');
+                redirect('buku', 'refresh');
+            }
+        }  
     }
 
-    public function hapus($id)
+    public function hapus($id_buku)
     {
-        $query = $this->m_buku->hapus($id);
-        if($query = true){
-            $this->session->set_flashdata('info', 'Data Buku Berhasil Didelete');
-            redirect('buku');
+        $_id = $this->db->get_where('buku',['id_buku'=>$id_buku])->row();
+        $query = $this->db->delete('buku',['id_buku'=>$id_buku]);
+        if ($query = true) {
+            unlink('assets/buku/gambar'.$_id->foto);
+            $this->session->set_flashdata('info', 'Data Berhasil di Delete');
+            redirect('buku','refresh');
         }
     }
+
+   
 }

@@ -13,41 +13,39 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleInputName1">Judul Buku</label>
-                    <input type="text" name="judul_buku"  value="<?= $data['nama_penerbit'];?>" class="form-control" required>
+                    <input type="text" name="judul_buku"  value="<?= $data['judul_buku'];?>" class="form-control" required>
                 </div>
                 
                 <div class="form-group">
                 <label for="exampleInputName1">Penerbit</label>
-                <div class="col-sm-10">
-                 <select name="id_penerbit" class="form-control select2"required>
-                 <?php
+                    <select name="id_penerbit" class="form-control select2" id="exampleInputName1" required>
+
+                    <?php
                         foreach ($penerbit as $row) {
                             if ($data['id_penerbit'] == $row->id_penerbit) {?>
-                                <option value="<?= $row->id_penerbit?>" selected><?= $row->nama_penerbit; ?> </option>
+                                <option value="<?= $row->id_penerbit;?>" selected><?= $row->nama_penerbit; ?> </option>
                     <?php } else{?>
-                        <option value="<?= $row->id_penerbit?>" ><?= $row->nama_penerbit; ?> </option>
+                        <option value="<?= $row->id_penerbit;?>" ><?= $row->nama_penerbit; ?> </option>
                         <?php }
                         }
                     ?>
                 </select>
-                  </div>
             </div>
 
             <div class="form-group">
                 <label for="exampleInputName1">Pengarang</label>
-                <div class="col-sm-10">
-                 <select name="id_pengarang" class="form-control select2"required>
+                    <select name="id_pengarang" class="form-control select2" id="exampleInputName1" required>
+
                     <?php
                         foreach ($pengarang as $row) {
                             if ($data['id_pengarang'] == $row->id_pengarang) {?>
-                                <option value="<?= $row->id_pengarang?>" selected><?= $row->nama_pengarang; ?> </option>
+                                <option value="<?= $row->id_pengarang;?>" selected><?= $row->nama_pengarang; ?> </option>
                     <?php } else{?>
-                        <option value="<?= $row->id_pengarang?>" ><?= $row->nama_pengarang; ?> </option>
+                        <option value="<?= $row->id_pengarang;?>" ><?= $row->nama_pengarang; ?> </option>
                         <?php }
                         }
                     ?>
                 </select>
-                  </div>
             </div>
             
             <div class="form-group">
@@ -67,7 +65,8 @@
 
             <div class="form-group">
                 <label for="exampleInputName1">Foto Buku</label>
-                    <input type="file" name="foto_buku" value="<?= $data['foto'];?>" class="form-control" id="exampleInputName1" accept="image/*" required>
+                    <input type="file" name="foto" class="form-control" id="exampleInputName1" accept="image/*" >
+                    <img src="<?= base_url()?>assets/buku/gambar/<?= $data['foto'];?>" alt="" width="200">
             </div>
 
                 <div class="form-group">

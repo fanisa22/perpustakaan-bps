@@ -19,43 +19,32 @@
                 <div class="card-body">
                   <h3 class="card-title">Perpustakaan BPS Kota Malang</h3>
                   <p class="card-description">
-                    Data Buku
+                    Data Katalog
                   </p>
                   <hr>
                   <div class="row">
                   <div class="col-md-6">
-                  <a href="<?= base_url() ?>buku/tambah_buku" class="btn btn-success"><i></i>  Tambah Buku</a>
+                  <a href="<?= base_url() ?>a_katalog/tambah_katalog" class="btn btn-success"><i></i>  Tambah Katalog</a>
     </div>
 
                   <div class="table-responsive pt-3">
                     <table class="table table-bordered" id="dataTable" width="100%">
                       <thead>
                         <tr>
-                          <th> Id Buku</th>
+                          <th> Id Katalog</th>
                           <th> Judul Buku</th>
-                          <th> Nama Penerbit</th>
-                          <th> Nama Pengarang</th>
-                          <th> ISBN</th>
-                          <th> foto</th>
+                          <th> E-Book</th>
                           <th> Aksi </th>
                       </thead>
                       <tbody>
                       <?php
                               foreach ($data->result() as $row) {?>
                               <tr>
-                                  <td><?= $row->id_buku;?></td>
+                                  <td><?= $row->id_katalog;?></td>
                                   <td><?= $row->judul_buku;?></td>
-                                  <td><?= $row->nama_penerbit;?></td>
-                                  <td><?= $row->nama_pengarang;?></td>
-                                  <td><?= $row->isbn;?></td>
-                                  <td class="text-center">
-                                      <a href="<?= base_url()?>assets/buku/gambar/<?= $row->foto;?>" target="_blank">
-                                          <img src="<?= base_url()?>assets/buku/gambar/<?= $row->foto;?>" alt="">
-                                      </a>
-                                  </td>
+                                  <td><?= $row->e_book;?></td>
                                   <td>
-                                  <a href="<?= base_url()?>buku/edit/<?= $row->id_buku;?>" class="btn btn-success btn-sm"> Edit </a>
-                                <a href="<?= base_url()?>buku/hapus/<?= $row->id_buku;?>" class="btn btn-danger btn-sm"onclick="return confirm('Anda Yakin Ingin Menghapus Data?')"> Hapus </a>
+                                <a href="<?= base_url()?>a_katalog/hapus/<?= $row->id_katalog;?>" class="btn btn-danger btn-sm"onclick="return confirm('Anda Yakin Ingin Menghapus Data?')"> Hapus </a>
 
                         </td>
                     </tr>

@@ -62,7 +62,7 @@
 
             <div class="form-group">
                 <label for="exampleInputName1">Foto Buku</label>
-                    <input type="file" name="foto_buku" class="form-control" id="exampleInputName1" accept="image/*" required>
+                    <input type="file" name="foto" class="form-control" id="exampleInputName1" accept="image/*" required>
             </div>
 
 
