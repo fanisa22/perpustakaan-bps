@@ -452,13 +452,13 @@
         </div>
 
         <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <form action="<?= base_url()?>feedback/simpan" method="post" role="form" class="php-email-form">
             <div class="section-title" data-aos="fade-up">
               <h2>Berikan Kritik dan Saran</h2>
               </div>
             <div class="row">
               <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                <input type="text" name="nama" class="form-control" id="nama" placeholder="Your Name" required>
               </div>
               <div class="form-group col-md-6">
                 <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
@@ -468,7 +468,7 @@
               <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
             </div>
             <div class="form-group">
-              <textarea class="form-control" name="message" rows="10" placeholder="Message" required></textarea>
+              <textarea class="form-control" name="message" id="message" rows="10" placeholder="Message" required></textarea>
             </div>
             <div class="my-3">
               <div class="loading">Loading</div>
