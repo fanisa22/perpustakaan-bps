@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 06 Des 2022 pada 08.34
+-- Waktu pembuatan: 11 Des 2022 pada 09.57
 -- Versi server: 10.4.14-MariaDB
 -- Versi PHP: 7.4.10
 
@@ -30,11 +30,20 @@ SET time_zone = "+00:00";
 CREATE TABLE `buku` (
   `id_buku` varchar(25) NOT NULL,
   `judul_buku` varchar(30) NOT NULL,
-  `id_penerbit` int(15) NOT NULL,
+  `id_penerbit` varchar(15) NOT NULL,
   `id_pengarang` int(15) NOT NULL,
   `isbn` varchar(20) NOT NULL,
-  `tahun` int(20) NOT NULL
+  `tahun` int(20) NOT NULL,
+  `halaman` int(15) NOT NULL,
+  `foto` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `buku`
+--
+
+INSERT INTO `buku` (`id_buku`, `judul_buku`, `id_penerbit`, `id_pengarang`, `isbn`, `tahun`, `halaman`, `foto`) VALUES
+('B0002', 'Matematika k', 'P001', 3, '232', 2006, 120, 'unicorn_1.jpg');
 
 -- --------------------------------------------------------
 
@@ -54,7 +63,27 @@ CREATE TABLE `galeri` (
 
 INSERT INTO `galeri` (`id_galeri`, `nama`, `foto`) VALUES
 (1, 'buku', '6329002.jpg'),
-(3, 'Erlinda Kristanti', 'unicorn_1.jpg');
+(3, 'Erlinda Kristanti', 'unicorn_1.jpg'),
+(4, 'buku', 'unicorn_2.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `katalog`
+--
+
+CREATE TABLE `katalog` (
+  `id_katalog` varchar(15) NOT NULL,
+  `id_buku` varchar(15) NOT NULL,
+  `e_book` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `katalog`
+--
+
+INSERT INTO `katalog` (`id_katalog`, `id_buku`, `e_book`) VALUES
+('K0002', 'B0002', 'Third-Party-Notices.pdf');
 
 -- --------------------------------------------------------
 
@@ -134,6 +163,12 @@ ALTER TABLE `galeri`
   ADD PRIMARY KEY (`id_galeri`);
 
 --
+-- Indeks untuk tabel `katalog`
+--
+ALTER TABLE `katalog`
+  ADD PRIMARY KEY (`id_katalog`);
+
+--
 -- Indeks untuk tabel `login`
 --
 ALTER TABLE `login`
@@ -159,7 +194,7 @@ ALTER TABLE `pengarang`
 -- AUTO_INCREMENT untuk tabel `galeri`
 --
 ALTER TABLE `galeri`
-  MODIFY `id_galeri` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_galeri` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT untuk tabel `pengarang`
