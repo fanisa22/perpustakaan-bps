@@ -53,6 +53,7 @@
                   <div class="card card-light-danger">
                     <div class="card-body">
                       <p class="mb-4">Total Data Feedback</p>
+                      <p class="fs-30 mb-2"><?= $total_feedback;?></p>
                     </div>
                   </div>
                 </div>

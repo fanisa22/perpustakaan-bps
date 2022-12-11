@@ -17,5 +17,10 @@ class M_dashboard extends CI_Model {
     {
         return $this->db->get('penerbit')->num_rows();
     }
+
+    public function total_feedback()
+    {
+        return $this->db->get('feedback')->num_rows();
+    }
 }
 ?>
