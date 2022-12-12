@@ -45,7 +45,8 @@
         <!-- <img src="<?php echo base_url();?>Bootslander/assets/img/Bps.png" alt=""> -->
         <!-- <span>FlexStart</span> -->
         <!-- <h1><a href="<?php echo base_url();?>Home"><span>Perpustakaan</span></a></h1> -->
-        <a href="index.html"><img src="<?php echo base_url();?>Bootslander/assets/img/logo_bps.png" alt="" class="img-fluid" width="250" height="100"></a>
+        <!-- <a href=""><img src="<?php echo base_url();?>Bootslander/assets/img/logo_bps.png" alt="" class="img-fluid" width="250" height="100"></a> -->
+        <a href=""><img src="<?php echo base_url();?>Bootslander/assets/img/Bps.png" alt="" class="img-fluid" width="250" height="100"></a>
       <!-- </a> -->
 
       <!-- <div class="logo"> -->
@@ -88,12 +89,12 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-8">
+          <div class="col-lg-4 d-block">
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="<?php echo base_url();?>Bootslander/assets/img/portfolio/portfolio-1.jpg" alt="">
+                  <img src="<?php echo base_url();?>Bootslander/assets/img/buku/bk4.jpg" alt="">
                 </div>
 
                 <div class="swiper-slide">

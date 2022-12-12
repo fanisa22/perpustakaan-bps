@@ -46,7 +46,8 @@
         <!-- <img src="<?php echo base_url();?>Bootslander/assets/img/Bps.png" alt=""> -->
         <!-- <span>FlexStart</span> -->
         <!-- <h1><a href="<?php echo base_url();?>Home"><span>Perpustakaan</span></a></h1> -->
-        <a href="index.html"><img src="<?php echo base_url();?>Bootslander/assets/img/logo_bps.png" alt="" class="img-fluid" width="250" height="100"></a>
+        <!-- <a href=""><img src="<?php echo base_url();?>Bootslander/assets/img/logo_bps.png" alt="" class="img-fluid" width="250" height="100"></a> -->
+        <a href=""><img src="<?php echo base_url();?>Bootslander/assets/img/Bps.png" alt="" class="img-fluid" width="250" height="100"></a>
       <!-- </a> -->
 
       <!-- <div class="logo"> -->
@@ -83,59 +84,106 @@
       </div>
     </section><!-- End Breadcrumbs -->
 
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <!-- <h2>About</h2> -->
+        <center><p>Online Public Access Catalogue</p><center>
+      </div>
+
+      <div class="col-py-4" data-aos="fade-up">
+        <form action="" method="GET" style="margin: 0 auto; width: 100%" class="w-100">
+          <div class="bg-light rounded shadow-blue-md mb-2">
+            <div class="input-group">
+              <input type="text" placeholder="Masukkan judul atau kata kunci pustaka" aria-describedby="button-addon1" class="form-control form-input check-value border-1 rounded text-dark" style="border: 0px solid #3d84b8; box-shadow: 0px 1px 5px #3d84b8;" name="q" value="">
+              <input type="hidden" name="subyek" value="">
+              <input type="hidden" name="media" value="no">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-link bx bx-search"><i data-feather="search"></i></button>
+              </div>
+            </div>
+          </div>
+        <div class="form-check">
+        &nbsp;
+          <input class="form-check-input" type="checkbox" value="match_whole" id="match_whole" name="match_whole">
+          <label class="form-check-label" for="match_whole">Cocokkan seluruh kata</label>
+        </div>
+        </form>
+    </div>
+    </div>
+
+    <!-- <div class="col-lg-6">
+
+      <div class="sidebar">
+
+        <h3 class="sidebar-title">Search</h3>
+        <div class="sidebar-item search-form">
+          <form action="">
+            <input type="text">
+            <button type="submit"><i class="bi bi-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </div> -->
+
+
     <!-- ======= Team Section ======= -->
     <section id="team" class="team">
       <div class="container">
 
-        <div class="row" data-aos="fade-left">
+      <div class="row" data-aos="fade-left">
 
-          <div class="col-lg-3 col-md-6">
-            <div class="member" data-aos="zoom-in" data-aos-delay="100">
-              <div class="pic"><img src="<?php echo base_url();?>Bootslander/assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <!-- <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div> -->
-              </div>
-            </div>
-          </div>
+<div class="col-lg-3 col-md-6">
+  <div class="member" data-aos="zoom-in" data-aos-delay="100">
+    <div class="pic"><img src="<?php echo base_url();?>Bootslander/assets/img/buku/bk4.jpg" class="img-fluid" alt=""></div>
+    <div class="member-info">
+      <h4>Walter White</h4>
+      <!-- <span>Chief Executive Officer</span> -->
+      <a href="<?= base_url()?>detailbuku" class="text-primary"><span>Selengkapnya</span></a>
+      <!-- <a href="<?= base_url()?>detailbuku" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a> -->
+    </div>
+  </div>
+</div>
 
-          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-            <div class="member" data-aos="zoom-in" data-aos-delay="200">
-              <div class="pic"><img src="<?php echo base_url();?>Bootslander/assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-              </div>
-            </div>
-          </div>
+<div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+  <div class="member" data-aos="zoom-in" data-aos-delay="200">
+    <div class="pic"><img src="<?php echo base_url();?>Bootslander/assets/img/buku/bk3.jpg" class="img-fluid" alt=""></div>
+    <div class="member-info">
+      <h4>Sarah Jhonson</h4>
+      <!-- <span>Product Manager</span> -->
+      <a href="register.html" class="text-primary"><span>Selengkapnya</span></a>
+    </div>
+  </div>
+</div>
 
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="member" data-aos="zoom-in" data-aos-delay="300">
-              <div class="pic"><img src="<?php echo base_url();?>Bootslander/assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-              </div>
-            </div>
-          </div>
+<div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+  <div class="member" data-aos="zoom-in" data-aos-delay="300">
+    <div class="pic"><img src="<?php echo base_url();?>Bootslander/assets/img/buku/bk4.jpg" class="img-fluid" alt=""></div>
+    <div class="member-info">
+      <h4>William Anderson</h4>
+      <!-- <span>CTO</span> -->
+      <a href="register.html" class="text-primary"><span>Selengkapnya</span></a>
+    </div>
+  </div>
+</div>
 
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="member" data-aos="zoom-in" data-aos-delay="400">
-              <div class="pic"><img src="<?php echo base_url();?>Bootslander/assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-              </div>
-            </div>
-          </div>
+<div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+  <div class="member" data-aos="zoom-in" data-aos-delay="400">
+    <div class="pic"><img src="<?php echo base_url();?>Bootslander/assets/img/buku/bk5.jpg" class="img-fluid" alt=""></div>
+    <div class="member-info">
+      <h4>Amanda Jepson</h4>
+      <!-- <span>Accountant</span> -->
+      <a href="register.html" class="text-primary"><span>Selengkapnya</span></a>
+    </div>
+  </div>
+</div>
 
-        </div>
+<div class="text-center">
+      <br><br>
+      <a href="<?= base_url()?>katalog" class="btn-get-started scrollto">More Catalogue</a>
+      </br>
+</div>
+
+</div>
 
       </div>
     </section><!-- End Team Section -->
