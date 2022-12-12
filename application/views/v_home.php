@@ -79,7 +79,7 @@
         </div>
         <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
           <br><br><br><br><br>
-          <img src="<?php echo base_url();?>Bootslander/assets/img/features-2.png" class="img-fluid animated" alt="">
+          <img src="<?php echo base_url();?>Bootslander/assets/img/home/features-2.png" class="img-fluid animated" alt="">
           </br></br></br></br>
         </div>
       </div>
@@ -118,10 +118,10 @@
         </div>
 
         <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
-          <h3>Pelayanan Perpustakaan Terpadu BPS Kota Malang</h3>
-          <p>Selamat datang di Pelayanan Perpustakaan Terpadu BPS Kota Malang!<br> Di website ini Anda dapat menemukan berbagai layanan yang kami sediakan, reservasi kunjungan langsung, informasi pustaka buku statistik dan informasi kontak yang dapat dihubungi. #MelayaniDenganHati❤️</p>
+          <h3>Pelayanan Perpustakaan BPS Kota Malang</h3>
+          <p>Selamat datang di Pelayanan Perpustakaan BPS Kota Malang!<br> Di website ini Anda dapat menemukan berbagai layanan yang kami sediakan, reservasi kunjungan langsung, informasi pustaka buku statistik dan informasi kontak yang dapat dihubungi. #MelayaniDenganHati❤️</p>
 
-          <h4>Pelayanan Perpustakaan Terpadu BPS Kota Malang</h4>
+          <!-- <h4>Pelayanan Perpustakaan Terpadu BPS Kota Malang</h4> -->
           <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon"><i class="bx bx-book"></i></div>
             <h4 class="title"><a href="">Koleksi Buku</a></h4>
@@ -159,7 +159,7 @@
 
         <div class="col-lg-3 col-md-6">
           <div class="member" data-aos="zoom-in" data-aos-delay="100">
-            <div class="pic"><img src="<?php echo base_url();?>Bootslander/assets/img/team/bk2.png" class="img-fluid" alt=""></div>
+            <div class="pic"><img src="<?php echo base_url();?>Bootslander/assets/img/buku/bk2.png" class="img-fluid" alt=""></div>
             <div class="member-info">
               <h4>Walter White</h4>
               <!-- <span>Chief Executive Officer</span> -->
@@ -171,7 +171,7 @@
 
         <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
           <div class="member" data-aos="zoom-in" data-aos-delay="200">
-            <div class="pic"><img src="<?php echo base_url();?>Bootslander/assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+            <div class="pic"><img src="<?php echo base_url();?>Bootslander/assets/img/buku/team-2.jpg" class="img-fluid" alt=""></div>
             <div class="member-info">
               <h4>Sarah Jhonson</h4>
               <!-- <span>Product Manager</span> -->
@@ -182,7 +182,7 @@
 
         <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
           <div class="member" data-aos="zoom-in" data-aos-delay="300">
-            <div class="pic"><img src="<?php echo base_url();?>Bootslander/assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+            <div class="pic"><img src="<?php echo base_url();?>Bootslander/assets/img/buku/team-3.jpg" class="img-fluid" alt=""></div>
             <div class="member-info">
               <h4>William Anderson</h4>
               <!-- <span>CTO</span> -->
@@ -193,7 +193,7 @@
 
         <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
           <div class="member" data-aos="zoom-in" data-aos-delay="400">
-            <div class="pic"><img src="<?php echo base_url();?>Bootslander/assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+            <div class="pic"><img src="<?php echo base_url();?>Bootslander/assets/img/buku/team-4.jpg" class="img-fluid" alt=""></div>
             <div class="member-info">
               <h4>Amanda Jepson</h4>
               <!-- <span>Accountant</span> -->
@@ -348,7 +348,7 @@
 
           <div class="swiper-slide">
             <div class="testimonial-item">
-              <img src="<?php echo base_url();?>Bootslander/assets/img/testimonials/Margo-Yuwono.jpg" class="testimonial-img" alt="">
+              <img src="<?php echo base_url();?>Bootslander/assets/img/quotes/Margo-Yuwono.jpg" class="testimonial-img" alt="">
               <h3>Margo Yuwono</h3>
               <h4>Kepala BPS</h4>
               <p>
@@ -361,7 +361,7 @@
 
           <div class="swiper-slide">
             <div class="testimonial-item">
-              <img src="<?php echo base_url();?>Bootslander/assets/img/testimonials/ss.jpg" class="testimonial-img" alt="">
+              <img src="<?php echo base_url();?>Bootslander/assets/img/quotes/ss.jpg" class="testimonial-img" alt="">
               <h3>Setianto</h3>
               <h4>Deputi BPS</h4>
               <p>
@@ -374,7 +374,7 @@
           
           <div class="swiper-slide">
             <div class="testimonial-item">
-              <img src="<?php echo base_url();?>Bootslander/assets/img/testimonials/AE.jpg" class="testimonial-img" alt="">
+              <img src="<?php echo base_url();?>Bootslander/assets/img/quotes/AE.jpg" class="testimonial-img" alt="">
               <h3>Albert Einstein</h3>
               <h4>Fisikawan</h4>
               <p>
@@ -387,7 +387,7 @@
 
           <div class="swiper-slide">
             <div class="testimonial-item">
-              <img src="<?php echo base_url();?>Bootslander/assets/img/testimonials/Najwa-Sihab.jpg" class="testimonial-img" alt="">
+              <img src="<?php echo base_url();?>Bootslander/assets/img/quotes/Najwa-Sihab.jpg" class="testimonial-img" alt="">
               <h3>Najwa Shihab</h3>
               <h4>Jurnalis</h4>
               <p>
@@ -400,7 +400,7 @@
 
           <div class="swiper-slide">
             <div class="testimonial-item">
-              <img src="<?php echo base_url();?>Bootslander/assets/img/testimonials/Fran-Lebowitz.jpg" class="testimonial-img" alt="">
+              <img src="<?php echo base_url();?>Bootslander/assets/img/quotes/Fran-Lebowitz.jpg" class="testimonial-img" alt="">
               <h3>Fran Lebowitz</h3>
               <h4>Penulis</h4>
               <p>

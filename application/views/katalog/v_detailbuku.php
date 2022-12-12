@@ -44,7 +44,8 @@
       <!-- <a href="index.html" class="logo d-flex align-items-center"> -->
         <!-- <img src="<?php echo base_url();?>Bootslander/assets/img/Bps.png" alt=""> -->
         <!-- <span>FlexStart</span> -->
-        <h1><a href="<?php echo base_url();?>Home"><span>Perpustakaan</span></a></h1>
+        <!-- <h1><a href="<?php echo base_url();?>Home"><span>Perpustakaan</span></a></h1> -->
+        <a href="index.html"><img src="<?php echo base_url();?>Bootslander/assets/img/logo_bps.png" alt="" class="img-fluid" width="250" height="100"></a>
       <!-- </a> -->
 
       <!-- <div class="logo"> -->
@@ -77,7 +78,6 @@
           <li><a href="<?= base_url()?>Home">Home</a></li>
           <li>Detail Buku</li>
         </ol>
-        <h2>Detail Buku</h2>
 
       </div>
     </section><!-- End Breadcrumbs -->
@@ -111,7 +111,7 @@
 
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>Informasi Buku</h3>
+              <h3>HARGA PERDAGANGAN BESAR KOMODITI SEKTOR PERTANIAN</h3>
               <ul>
                 <li><strong>Subyek</strong>: Keuangan</li>
                 <li><strong>ISBN</strong>: 2747-254X</li>
@@ -119,18 +119,6 @@
                 <li><strong>Tahun Terbit</strong>: 2021</li>
                 <li><strong>Penerbit</strong>: Provinsi Jawa Timur</li>
               </ul>
-            </div>
-            <div class="portfolio-description">
-              <h3>HARGA PERDAGANGAN BESAR KOMODITI SEKTOR PERTANIAN, SEKTOR PERTAMBANGAN DAN PENGGALIAN, DAN SEKTOR INDUSTRI PROVINSI JAWA TIMUR 2021</h3>
-              <p>
-              Publikasi Statistik Harga Perdagangan Besar Komoditi Sektor Pertanian Sektor Pertambangan dan Penggalian dan Sektor Industri Provinsi Jawa Timur 
-              Tahun 2021 merupakan publikasi tahunan yang diterbitkan oleh Badan Pusat Statistik Provinsi Jawa Timur. Tahun ini merupakan tahun keempat diterbitkannya 
-              Publikasi Statistik Harga Perdagangan Besar Komoditi Sektor Pertanian, Sektor Pertambangan dan Penggalian, dan Sektor Industri Provinsi Jawa Timur, yang 
-              diharapkan terbit secara rutin pada tahun-tahun mendatang. Data yang disajikan dalam publikasi ini adalah rata-rata harga beberapa komoditas tingkat 
-              perdagangan besar/grosir di Provinsi Jawa Timur tahun 2021 dari hasil Survei Harga Perdagangan Besar yang dikumpulkan setiap bulan selama tahun 2021. 
-              Data harga ini merupakan data harga yang digunakan untuk menghitung Indeks Harga Perdagangan Besar Nasional dan menjadi cikal bakal untuk menghitung 
-              Indeks Harga Perdagangan Besar Provinsi Jawa Timur.
-              </p>
             </div>
           </div>
 
