@@ -220,11 +220,11 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Unit Layanan</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Koleksi Buku</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Permintaan Data</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Pelayanan Umum</a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li> -->
             </ul>
           </div>
 
