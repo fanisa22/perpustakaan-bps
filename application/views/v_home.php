@@ -43,9 +43,9 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <!-- <h1><a href="index.html"><span>Bootslander</span></a></h1> -->
+        <!-- <h1><a href="index.html"><span>Perpustakaan</span></a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="index.html"><img src="<?php echo base_url();?>Bootslander/assets/img/Bps.png" alt="" class="img-fluid" width="350" height="150"></a>
+        <a href="index.html"><img src="<?php echo base_url();?>Bootslander/assets/img/logo_bps.png" alt="" class="img-fluid" width="250" height="100"></a>
       </div>
 
       <nav id="navbar" class="navbar">
@@ -79,7 +79,7 @@
         </div>
         <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
           <br><br><br><br><br>
-          <img src="<?php echo base_url();?>Bootslander/assets/img/book1.png" class="img-fluid animated" alt="" width="574" height="766">
+          <img src="<?php echo base_url();?>Bootslander/assets/img/features-2.png" class="img-fluid animated" alt="">
           </br></br></br></br>
         </div>
       </div>
@@ -118,25 +118,26 @@
         </div>
 
         <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
-          <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
-          <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla tenetur. Suscipit aut voluptate.</p>
+          <h3>Pelayanan Perpustakaan Terpadu BPS Kota Malang</h3>
+          <p>Selamat datang di Pelayanan Perpustakaan Terpadu BPS Kota Malang!<br> Di website ini Anda dapat menemukan berbagai layanan yang kami sediakan, reservasi kunjungan langsung, informasi pustaka buku statistik dan informasi kontak yang dapat dihubungi. #MelayaniDenganHati❤️</p>
 
+          <h4>Pelayanan Perpustakaan Terpadu BPS Kota Malang</h4>
           <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon"><i class="bx bx-fingerprint"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            <div class="icon"><i class="bx bx-book"></i></div>
+            <h4 class="title"><a href="">Koleksi Buku</a></h4>
+            <p class="description">Bagi sahabat data dapat membaca koleksi buku perpustakaan pada website ini di menu katalog berupa e-book</p>
           </div>
 
           <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon"><i class="bx bx-gift"></i></div>
-            <h4 class="title"><a href="">Nemo Enim</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            <div class="icon"><i class="bx bx-data"></i></div>
+            <h4 class="title"><a href="">Permintaan Data</a></h4>
+            <p class="description">Bagi konsumen data yang datang langsung ke BPS dapat dilayani di Ruang Perpustakaan, Ruang Galeri Buku dan Ruang Konsultasi Statistik.</p>
           </div>
 
           <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon"><i class="bx bx-atom"></i></div>
-            <h4 class="title"><a href="">Dine Pad</a></h4>
-            <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
+            <div class="icon"><i class="bx bx-layer"></i></div>
+            <h4 class="title"><a href="">Pelayanan Umum</a></h4>
+            <p class="description">Konsultasi terkait data, metadata, klasifikasi, dan produk statistik BPS lainnya.</p>
           </div>
 
         </div>
@@ -163,6 +164,7 @@
               <h4>Walter White</h4>
               <!-- <span>Chief Executive Officer</span> -->
               <a href="<?= base_url()?>detailbuku" class="text-primary"><span>Selengkapnya</span></a>
+              <!-- <a href="<?= base_url()?>detailbuku" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a> -->
             </div>
           </div>
         </div>
@@ -455,7 +457,7 @@
           <form action="<?= base_url()?>feedback/simpan" method="post" role="form" class="php-email-form">
             <div class="section-title" data-aos="fade-up">
               <h2>Berikan Kritik dan Saran</h2>
-              </div>
+            </div>
             <div class="row">
               <div class="form-group col-md-6">
                 <input type="text" name="nama" class="form-control" id="nama" placeholder="Your Name" required>
@@ -492,25 +494,16 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
-          <!-- <div class="section-title" data-aos="fade-up">
-            <h2>Contact</h2>
-            <p>Contact</p>
-          </div> -->
-          
 
-          <!-- <div class="col-lg-4 col-md-6">
-            <div class="footer-info">
-              <h3>BPS Kota Malang</h3> -->
-              <!-- <p class="pb-3"><em>Qui repudiandae et eum dolores alias sed ea. Qui suscipit veniam excepturi quod.</em></p> -->
-              <!-- <p>
-                Jl. Janti Barat No. 47 Malang 65148<br>
-                Indonesia<br><br>
-                <strong>Phone:</strong> (0341) 801164<br> -->
-                <!-- <strong>Faks:</strong> (0341) 805871<br> -->
-                <!-- <strong>Email:</strong> bps3573@bps.go.id<br>
-              </p>
-            </div>
-          </div> -->
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>BPS Kota Malang</h3>
+            <p>
+              Jl. Janti Barat No.47 Kota Malang<br>
+              Indonesia<br><br>
+              <strong>Phone:</strong> 0341-801164<br>
+              <strong>Email:</strong> bps3573@bps.go.id<br>
+            </p>
+          </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Tautan</h4>
@@ -542,6 +535,11 @@
                 <a href="https://api.whatsapp.com/send?phone=6281250503573" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
                 <a href="https://www.youtube.com/channel/UCkKOTKDtStYq4YTRvjAAy6w" class="youtube"><i class="bx bxl-youtube"></i></a>
                 <a href="https://www.twitter.com/bps_statistics" class="twitter"><i class="bx bxl-twitter"></i></a>
+            </div>
+
+            <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+              <br>
+              <img src="<?php echo base_url();?>Bootslander/assets/img/berakhlak.png" class="img-fluid animated" alt="">
             </div>
           </div>
 

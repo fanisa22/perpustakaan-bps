@@ -43,7 +43,7 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <h1><a href="index.html"><span>Check Our Catalogue</span></a></h1>
+        <h1><a href="<?php echo base_url();?>Home"><span>Check Our Catalogue</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -165,6 +165,62 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>BPS Kota Malang</h3>
+            <p>
+              Jl. Janti Barat No.47 Kota Malang<br>
+              Indonesia<br><br>
+              <strong>Phone:</strong> 0341-801164<br>
+              <strong>Email:</strong> bps3573@bps.go.id<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Tautan</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#team">Catalogue</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#gallery">Gallery</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Unit Layanan</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Sosial Media</h4>
+            <p>Temukan hal yang menarik hanya di media sosial kami!</p>
+            <div class="social-links mt-3">
+                <a href="https://instagram.com/bpskotamalang" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=6281250503573" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+                <a href="https://www.youtube.com/channel/UCkKOTKDtStYq4YTRvjAAy6w" class="youtube"><i class="bx bxl-youtube"></i></a>
+                <a href="https://www.twitter.com/bps_statistics" class="twitter"><i class="bx bxl-twitter"></i></a>
+            </div>
+
+            <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+              <br>
+              <img src="<?php echo base_url();?>Bootslander/assets/img/berakhlak.png" class="img-fluid animated" alt="">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
     <div class="container">
       <div class="copyright">
         &copy; Copyright <strong><span>BPS Kota Malang</span></strong>. All Rights Reserved 2022
