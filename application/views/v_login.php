@@ -36,8 +36,8 @@
               <?= $this->session->flashdata('info');?>
 
               <div class="text-center">  
-              <h4>LOGIN</h4>
-               <h5 class="font-weight-light">Perpustakaan BPS Kota Malang</h5>
+              <b><h4>LOGIN</h4></b>
+               <b><h5 class="font-weight-light">Perpustakaan BPS Kota Malang</h5></b>
               </div>
               <br>
                 <form method="post" action="<?= base_url()?>c_login" class="admin"> 
