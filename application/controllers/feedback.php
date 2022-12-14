@@ -27,9 +27,6 @@ class Feedback Extends CI_Controller{
 
         );
         $query = $this->db->insert('feedback', $data);
-        if($query = true){
-            $this->session->set_flashdata('info', 'Terima Kasih, Feedback Berhasil Disimpan');
             redirect('v_home','refresh');
-        }
     }
 }
