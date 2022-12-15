@@ -177,11 +177,11 @@
   </div>
 </div>
 
-<div class="text-center">
+<!-- <div class="text-center">
       <br><br>
       <a href="<?= base_url()?>katalog" class="btn-get-started scrollto">More Catalogue</a>
       </br>
-</div>
+</div> -->
 
 </div>
 
