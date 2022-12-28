@@ -485,7 +485,8 @@
       </div>
 
     </div>
-  </section><!-- End Contact Section -->
+  </section><!-- End Contact Section --> 
+  <!-- coba -->
 
 
   </main><!-- End #main -->
@@ -523,8 +524,8 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Koleksi Buku</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Permintaan Data</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Pelayanan Umum</a></li>
-              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li> -->
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
             </ul>
           </div>
 
