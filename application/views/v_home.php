@@ -46,7 +46,7 @@
         <!-- <h1><a href="index.html"><span>Perpustakaan</span></a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="<?php echo base_url();?>login"><img src="<?php echo base_url();?>Bootslander/assets/img/logo_bps.png" alt="" class="img-fluid" width="250" height="100"></a> -->
-        <a href="<?php echo base_url();?>login"><img src="<?php echo base_url();?>Bootslander/assets/img/BPS.png" alt="" class="img-fluid" width="250" height="100"></a>
+        <a href="<?php echo base_url();?>login"><img src="<?php echo base_url();?>Bootslander/assets/img/logobps.png" alt="" class="img-fluid" width="250" height="100"></a>
       </div>
 
       <nav id="navbar" class="navbar">
@@ -524,8 +524,8 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Koleksi Buku</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Permintaan Data</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Pelayanan Umum</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li> -->
             </ul>
           </div>
 
